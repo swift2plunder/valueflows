@@ -7,15 +7,7 @@
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -24,14 +16,6 @@
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Transportation"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Process"
     }
@@ -42,14 +26,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -66,14 +42,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -95,6 +63,37 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows/#improve" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Action"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "improve"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#Process" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Process"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows/#trackingIdentifier" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -104,14 +103,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
@@ -126,1529 +117,6 @@
      ]
   }
    ,
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#AgentRelationship" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "An ongoing voluntary association between 2 Agents of any kind."
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#AgentRelationship"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#context" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "context"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#comment" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#Literal" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#committedReceiver" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The economic agent whom a future economic event is committed to."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Commitment"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "committed receiver"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#resourceCategory" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A type or categorization that describes a resource, at any level of granularity."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicResource"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "category"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#ResourceTaxonomyItem"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#Agreement" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies."
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Agreement"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Agreement"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#produce" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "produce"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#produce"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#increment"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#image" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "image"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#increment" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "increment"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#increment"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#range" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#outputOf" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "output of"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Process"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#committedInputOf" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Commitment"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "committed input of"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Process"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#affectedQuantity" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "affected quantity"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://qudt.org/schema/qudt/QuantityValue"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#unload" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "unload"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#increment"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#unload"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#ResourceTaxonomyItem" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A resource category, part of a taxonomy."
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:ResourceTaxonomyItem"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#ResourceTaxonomyItem"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#inputOf" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "input of"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Process"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#name" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "An informal or formal textual identifier for an object. Does not imply uniqueness."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "name"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#start" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The starting date and optionally time of the economic event."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "start"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#receiver" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The economic agent whom the economic event is for."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "receiver"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#domain" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/ns/org#Organization" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "Usually a more formally defined structure than Group, often legally defined, can be a group or not."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "org:Organization"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/ns/org#Organization"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#Location" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Location"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Location"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#url" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "url"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#subject" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The subject of a relationship between 2 agents."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "subject"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#EconomicEvent" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "An inflow or outflow of an economic resource in relation to a process and/or exchange. This could reflect a change in the quantity of a vf:EconomicResource. It is also defined by its behavior in relation to the vf:EconomicResource and a vf:Process (consume, use, produce, etc.)"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#use" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "use"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#load" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "load"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#load"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#decrement"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2002/07/owl#Class" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#Appreciation" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy."
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Appreciation"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Appreciation"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#accept" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "accept"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#ExchangeAgreement" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "An agreement to exchange something with another agent(s), containing vf:Commitments towards that end."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:ExchangeAgreement"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Agreement"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#ExchangeAgreement"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#Transformation" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A process that produces something new from other resources, or improves an existing resource."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Transformation"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Transformation"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Process"
-    }
-     ]
-  }
-   ,
-  "http://xmlns.com/foaf/0.1/#Person" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A natural person."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "foaf:Person"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Person"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2002/07/owl#Ontology" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#Class" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#Datatype" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#committedProvider" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The economic agent who commits to a future economic event."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Commitment"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "committed provider"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#relationship" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A verb that describes a generic defined relationship that exists between 2 agents."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "relationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#appreciationOf" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The economic event being appreciated (gift economy)."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Appreciation"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "appreciation of"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#fulfills" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The economic event which completely or partially fulfills a commitment on a process."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicEvent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "fulfills"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Commitment"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#object" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The object of a relationship between 2 agents."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "object"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2002/07/owl#ObjectProperty" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#improve" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "improve"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2004/02/skos/core#note" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2004/02/skos/core#note"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows/#Process" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available."
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Process"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Process"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows/#primaryLocation" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1656,14 +124,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -1693,14 +153,6 @@
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
@@ -1722,22 +174,14 @@
   }
    ,
   "https://w3id.org/valueflows/#Action" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
       "value" : "An action verb defining the kind of event, commitment, or intent."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1747,72 +191,71 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     }
      ]
   }
    ,
   "https://w3id.org/valueflows/#EconomicResource" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
       "value" : "A resource which is useful to people or the ecosystem."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:EconomicResource"
     }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#EconomicResource"
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#AgentRelationship" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An ongoing voluntary association between 2 Agents of any kind."
     }
-    , { 
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:AgentRelationship"
     }
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : { 
+  "https://w3id.org/valueflows/#context" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      "value" : "https://w3id.org/valueflows/#AgentRelationship"
     }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "context"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
     }
      ]
   }
@@ -1824,14 +267,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -1853,18 +288,102 @@
      ]
   }
    ,
-  "https://w3id.org/valueflows/#receive" : { 
+  "https://w3id.org/valueflows/#committedReceiver" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic agent whom a future economic event is committed to."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Commitment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "committed receiver"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#resourceCategory" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A type or categorization that describes a resource, at any level of granularity."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicResource"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "category"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#ResourceTaxonomyItem"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#Agreement" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Agreement"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#produce" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "produce"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      "value" : "https://w3id.org/valueflows/#increment"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#receive" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Action"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1874,40 +393,33 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#receive"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#increment"
     }
      ]
   }
    ,
-  "http://www.w3.org/2000/01/rdf-schema#Resource" : { 
+  "https://w3id.org/valueflows/#image" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
     }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "image"
     }
      ]
   }
    ,
-  "http://www.w3.org/2002/07/owl#DatatypeProperty" : { 
+  "https://w3id.org/valueflows/#increment" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "increment"
     }
      ]
   }
@@ -1919,14 +431,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -1949,57 +453,42 @@
   }
    ,
   "https://w3id.org/valueflows/#Commitment" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
       "value" : "A planned economic event or transfer that has been promised by an agent to another agent."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:Commitment"
     }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#Commitment"
-    }
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : { 
+  "https://w3id.org/valueflows/#outputOf" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "output of"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      "value" : "https://w3id.org/valueflows/#Process"
     }
      ]
   }
@@ -2011,14 +500,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2036,6 +517,29 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#committedInputOf" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Commitment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "committed input of"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Process"
     }
      ]
   }
@@ -2068,47 +572,10 @@
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "cite"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2002/07/owl#AnnotationProperty" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/2000/01/rdf-schema#label" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     }
      ]
   }
@@ -2120,14 +587,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2154,44 +613,56 @@
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "decrement"
     }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#affectedQuantity" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event."
+    }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#decrement"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "affected quantity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://qudt.org/schema/qudt/QuantityValue"
     }
      ]
   }
    ,
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : { 
+  "https://w3id.org/valueflows/#unload" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "unload"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      "value" : "https://w3id.org/valueflows/#increment"
     }
      ]
   }
@@ -2201,14 +672,6 @@
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
@@ -2217,11 +680,25 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#issue"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#decrement"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#ResourceTaxonomyItem" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A resource category, part of a taxonomy."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:ResourceTaxonomyItem"
     }
      ]
   }
@@ -2233,14 +710,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2262,18 +731,33 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows/#inputOf" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "input of"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Process"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows/#consume" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#Action"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -2283,28 +767,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows/#consume"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "https://w3id.org/valueflows/#decrement"
-    }
-     ]
-  }
-   ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
     }
      ]
   }
@@ -2316,14 +779,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2348,14 +803,6 @@
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
@@ -2376,6 +823,24 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows/#name" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An informal or formal textual identifier for an object. Does not imply uniqueness."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "name"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows/#note" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -2383,14 +848,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2415,14 +872,6 @@
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
@@ -2443,31 +892,53 @@
      ]
   }
    ,
-  "http://www.w3.org/2000/01/rdf-schema#Container" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+  "https://w3id.org/valueflows/#start" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The starting date and optionally time of the economic event."
     }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "start"
     }
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : { 
+  "https://w3id.org/valueflows/#receiver" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic agent whom the economic event is for."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "receiver"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
     }
      ]
   }
@@ -2479,14 +950,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2508,18 +971,51 @@
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : { 
+  "http://www.w3.org/ns/org#Organization" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "Usually a more formally defined structure than Group, often legally defined, can be a group or not."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "org:Organization"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#Location" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Location"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#url" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "url"
     }
      ]
   }
@@ -2531,14 +1027,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2568,14 +1056,6 @@
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
-      "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
@@ -2596,38 +1076,36 @@
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : { 
+  "https://w3id.org/valueflows/#subject" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The subject of a relationship between 2 agents."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      "value" : "https://w3id.org/valueflows/#AgentRelationship"
     }
      ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "subject"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
     }
      ]
   }
    ,
   "https://w3id.org/valueflows/#committedOutputOf" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2649,37 +1127,100 @@
      ]
   }
    ,
-  "http://xmlns.com/foaf/0.1/#Agent" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  "https://w3id.org/valueflows/#EconomicEvent" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An inflow or outflow of an economic resource in relation to a process and/or exchange. This could reflect a change in the quantity of a vf:EconomicResource. It is also defined by its behavior in relation to the vf:EconomicResource and a vf:Process (consume, use, produce, etc.)"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#Class"
     }
-    , { 
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:EconomicEvent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#use" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+      "value" : "https://w3id.org/valueflows/#Action"
     }
      ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "use"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#load" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Action"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "load"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#decrement"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#Appreciation" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Appreciation"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#accept" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Action"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "accept"
+    }
+     ]
+  }
+   ,
+  "http://xmlns.com/foaf/0.1/#Agent" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
       "value" : "A person or group or organization with economic agency."
     }
      ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "foaf:Agent"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
     }
      ]
   }
@@ -2691,14 +1232,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2720,28 +1253,6 @@
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows/#inExchangeFor" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -2749,14 +1260,6 @@
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    }
-    , { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     }
@@ -2778,44 +1281,211 @@
      ]
   }
    ,
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : { 
+  "https://w3id.org/valueflows/#ExchangeAgreement" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An agreement to exchange something with another agent(s), containing vf:Commitments towards that end."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:ExchangeAgreement"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
-    }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Container"
+      "value" : "https://w3id.org/valueflows/#Agreement"
     }
      ]
   }
    ,
-  "http://qudt.org/schema/qudt/QuantityValue" : { 
+  "https://w3id.org/valueflows/#Transformation" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A process that produces something new from other resources, or improves an existing resource."
+    }
+     ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "http://www.w3.org/2002/07/owl#Class"
     }
-    , { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Class"
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Transformation"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+      "value" : "https://w3id.org/valueflows/#Process"
     }
-    , { 
+     ]
+  }
+   ,
+  "http://xmlns.com/foaf/0.1/#Person" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A natural person."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
-      "value" : "http://qudt.org/schema/qudt/QuantityValue"
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "foaf:Person"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#committedProvider" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic agent who commits to a future economic event."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Commitment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "committed provider"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#relationship" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A verb that describes a generic defined relationship that exists between 2 agents."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#AgentRelationship"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "relationship"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#appreciationOf" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic event being appreciated (gift economy)."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Appreciation"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "appreciation of"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#fulfills" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic event which completely or partially fulfills a commitment on a process."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#EconomicEvent"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "fulfills"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#Commitment"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows/#object" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The object of a relationship between 2 agents."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows/#AgentRelationship"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "object"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://xmlns.com/foaf/0.1/#Agent"
     }
      ]
   }
