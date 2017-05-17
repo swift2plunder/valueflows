@@ -761,6 +761,31 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#committedScope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The larger boundary or context of a commitment, used for accounting, planning.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedScope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>http://www.w3.org/2002/07/owl#Thing</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedScope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">scope</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedScope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedScope</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#Agreement</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies.</typedLiteral>
@@ -1144,6 +1169,31 @@
       <uri>https://w3id.org/valueflows#Appreciation</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#scope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The larger boundary or context of an economic event, used for accounting, planning, distributing income.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#scope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>http://www.w3.org/2002/07/owl#Thing</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#scope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">scope</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#scope</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#scope</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#committedInputOf</uri>

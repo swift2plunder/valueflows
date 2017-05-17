@@ -150,6 +150,11 @@
 <https://w3id.org/valueflows#committedReceiver> <http://www.w3.org/2000/01/rdf-schema#label> "committed receiver" .
 <https://w3id.org/valueflows#committedReceiver> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
 <https://w3id.org/valueflows#committedReceiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#committedScope> <http://www.w3.org/2000/01/rdf-schema#comment> "The larger boundary or context of a commitment, used for accounting, planning." .
+<https://w3id.org/valueflows#committedScope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/valueflows#committedScope> <http://www.w3.org/2000/01/rdf-schema#label> "scope" .
+<https://w3id.org/valueflows#committedScope> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
+<https://w3id.org/valueflows#committedScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies." .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Agreement" .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -227,6 +232,11 @@
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/2000/01/rdf-schema#comment> "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy." .
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Appreciation" .
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#scope> <http://www.w3.org/2000/01/rdf-schema#comment> "The larger boundary or context of an economic event, used for accounting, planning, distributing income." .
+<https://w3id.org/valueflows#scope> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/valueflows#scope> <http://www.w3.org/2000/01/rdf-schema#label> "scope" .
+<https://w3id.org/valueflows#scope> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
+<https://w3id.org/valueflows#scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#committedInputOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Process> .
 <https://w3id.org/valueflows#committedInputOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
 <https://w3id.org/valueflows#committedInputOf> <http://www.w3.org/2000/01/rdf-schema#label> "committed input of" .

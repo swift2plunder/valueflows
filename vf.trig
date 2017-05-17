@@ -206,6 +206,12 @@ vf:committedReceiver  a  owl:ObjectProperty ;
         rdfs:label    "committed receiver" ;
         rdfs:range    foaf:Agent .
 
+vf:committedScope  a  owl:ObjectProperty ;
+        rdfs:comment  "The larger boundary or context of a commitment, used for accounting, planning." ;
+        rdfs:domain   vf:Commitment ;
+        rdfs:label    "scope" ;
+        rdfs:range    owl:Thing .
+
 vf:Agreement  a       owl:Class ;
         rdfs:comment  "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies." ;
         rdfs:label    "vf:Agreement" .
@@ -302,6 +308,12 @@ vf:inputOf  a        owl:ObjectProperty ;
 vf:Appreciation  a    owl:Class ;
         rdfs:comment  "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy." ;
         rdfs:label    "vf:Appreciation" .
+
+vf:scope  a           owl:ObjectProperty ;
+        rdfs:comment  "The larger boundary or context of an economic event, used for accounting, planning, distributing income." ;
+        rdfs:domain   vf:EconomicEvent ;
+        rdfs:label    "scope" ;
+        rdfs:range    owl:Thing .
 
 vf:committedInputOf  a  owl:ObjectProperty ;
         rdfs:domain  vf:Commitment ;

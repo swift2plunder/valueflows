@@ -168,6 +168,13 @@
     "label" : "committed receiver",
     "range" : "foaf:Agent"
   }, {
+    "@id" : "vf:committedScope",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The larger boundary or context of a commitment, used for accounting, planning.",
+    "domain" : "vf:Commitment",
+    "label" : "scope",
+    "range" : "owl:Thing"
+  }, {
     "@id" : "vf:committedUnder",
     "@type" : "owl:ObjectProperty",
     "comment" : "Reference an agreement between agents which specifies the rules or policies which govern this commitment.",
@@ -335,6 +342,13 @@
     "domain" : "vf:EconomicResource",
     "label" : "category",
     "range" : "vf:ResourceTaxonomyItem"
+  }, {
+    "@id" : "vf:scope",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The larger boundary or context of an economic event, used for accounting, planning, distributing income.",
+    "domain" : "vf:EconomicEvent",
+    "label" : "scope",
+    "range" : "owl:Thing"
   }, {
     "@id" : "vf:start",
     "@type" : "owl:ObjectProperty",
