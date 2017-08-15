@@ -87,8 +87,8 @@
 <https://w3id.org/valueflows#consume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#decrement> .
 <https://w3id.org/valueflows#consume> <http://www.w3.org/2000/01/rdf-schema#label> "consume" .
 <https://w3id.org/valueflows#consume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
-<https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#comment> "The economic event which completely or partially fulfills a commitment on a process." .
-<https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
+<https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#comment> "The commitment which is completely or partially fulfilled by an economic event." .
+<https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Fulfillment> .
 <https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Commitment> .
 <https://w3id.org/valueflows#fulfills> <http://www.w3.org/2000/01/rdf-schema#label> "fulfills" .
 <https://w3id.org/valueflows#fulfills> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -130,6 +130,11 @@
 <https://w3id.org/valueflows#affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#Location> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Location" .
 <https://w3id.org/valueflows#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#fulfilledQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity of the fulfillment of an event towards a commitment." .
+<https://w3id.org/valueflows#fulfilledQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
+<https://w3id.org/valueflows#fulfilledQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Fulfillment> .
+<https://w3id.org/valueflows#fulfilledQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "fulfilled quantity" .
+<https://w3id.org/valueflows#fulfilledQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://xmlns.com/foaf/0.1/#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A natural person." .
 <http://xmlns.com/foaf/0.1/#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/#Agent> .
 <http://xmlns.com/foaf/0.1/#Person> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Person" .
@@ -176,6 +181,11 @@
 <https://w3id.org/valueflows#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available." .
 <https://w3id.org/valueflows#Process> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Process" .
 <https://w3id.org/valueflows#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#fulfilledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The economic event which completely or partially fulfills a commitment." .
+<https://w3id.org/valueflows#fulfilledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Fulfillment> .
+<https://w3id.org/valueflows#fulfilledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#EconomicEvent> .
+<https://w3id.org/valueflows#fulfilledBy> <http://www.w3.org/2000/01/rdf-schema#label> "fulfilled by" .
+<https://w3id.org/valueflows#fulfilledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event." .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
@@ -188,6 +198,9 @@
 <https://w3id.org/valueflows#action> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#action> <http://www.w3.org/2000/01/rdf-schema#label> "action" .
 <https://w3id.org/valueflows#action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment." .
+<https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Fulfillment" .
+<https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
 <https://w3id.org/valueflows#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/valueflows#receive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#increment> .

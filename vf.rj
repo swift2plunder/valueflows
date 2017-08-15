@@ -232,6 +232,62 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#fulfilledQuantity" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The quantity of the fulfillment of an event towards a commitment."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Fulfillment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "fulfilled quantity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://qudt.org/schema/qudt/QuantityValue"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#fulfilledBy" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The economic event which completely or partially fulfills a commitment."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Fulfillment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "fulfilled by"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#Transportation" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -736,10 +792,28 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#Fulfillment" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:Fulfillment"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#fulfills" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
-      "value" : "The economic event which completely or partially fulfills a commitment on a process."
+      "value" : "The commitment which is completely or partially fulfilled by an economic event."
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
@@ -749,7 +823,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
+      "value" : "https://w3id.org/valueflows#Fulfillment"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 

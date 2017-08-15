@@ -448,12 +448,12 @@
     <triple>
       <uri>https://w3id.org/valueflows#fulfills</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The economic event which completely or partially fulfills a commitment on a process.</typedLiteral>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The commitment which is completely or partially fulfilled by an economic event.</typedLiteral>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#fulfills</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#fulfills</uri>
@@ -659,6 +659,31 @@
       <uri>https://w3id.org/valueflows#Location</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledQuantity</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The quantity of the fulfillment of an event towards a commitment.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledQuantity</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>http://qudt.org/schema/qudt/QuantityValue</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledQuantity</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledQuantity</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">fulfilled quantity</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledQuantity</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
       <uri>http://xmlns.com/foaf/0.1/#Person</uri>
@@ -891,6 +916,31 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#fulfilledBy</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The economic event which completely or partially fulfills a commitment.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledBy</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledBy</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledBy</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">fulfilled by</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#fulfilledBy</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#affectedQuantity</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event.</typedLiteral>
@@ -949,6 +999,21 @@
       <uri>https://w3id.org/valueflows#action</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:Fulfillment</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#url</uri>

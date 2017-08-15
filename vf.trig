@@ -126,8 +126,8 @@ vf:consume  a               vf:Action ;
         rdfs:subPropertyOf  vf:decrement .
 
 vf:fulfills  a        owl:ObjectProperty ;
-        rdfs:comment  "The economic event which completely or partially fulfills a commitment on a process." ;
-        rdfs:domain   vf:EconomicEvent ;
+        rdfs:comment  "The commitment which is completely or partially fulfilled by an economic event." ;
+        rdfs:domain   vf:Fulfillment ;
         rdfs:label    "fulfills" ;
         rdfs:range    vf:Commitment .
 
@@ -179,6 +179,12 @@ vf:affects  a         owl:ObjectProperty ;
 
 vf:Location  a      owl:Class ;
         rdfs:label  "vf:Location" .
+
+vf:fulfilledQuantity  a  owl:ObjectProperty ;
+        rdfs:comment  "The quantity of the fulfillment of an event towards a commitment." ;
+        rdfs:domain   vf:Fulfillment ;
+        rdfs:label    "fulfilled quantity" ;
+        rdfs:range    qudt:QuantityValue .
 
 foaf:Person  a           owl:Class ;
         rdfs:comment     "A natural person." ;
@@ -239,6 +245,12 @@ vf:Process  a         owl:Class ;
         rdfs:comment  "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available." ;
         rdfs:label    "vf:Process" .
 
+vf:fulfilledBy  a     owl:ObjectProperty ;
+        rdfs:comment  "The economic event which completely or partially fulfills a commitment." ;
+        rdfs:domain   vf:Fulfillment ;
+        rdfs:label    "fulfilled by" ;
+        rdfs:range    vf:EconomicEvent .
+
 vf:affectedQuantity  a  owl:ObjectProperty ;
         rdfs:comment  "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event." ;
         rdfs:domain   vf:EconomicEvent ;
@@ -253,6 +265,10 @@ vf:action  a          owl:ObjectProperty ;
         rdfs:domain   vf:EconomicEvent ;
         rdfs:label    "action" ;
         rdfs:range    vf:Action .
+
+vf:Fulfillment  a     owl:Class ;
+        rdfs:comment  "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment." ;
+        rdfs:label    "vf:Fulfillment" .
 
 vf:url  a           owl:DatatypeProperty ;
         rdfs:label  "url" .

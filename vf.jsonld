@@ -59,6 +59,11 @@
     "label" : "vf:ExchangeAgreement",
     "subClassOf" : "vf:Agreement"
   }, {
+    "@id" : "vf:Fulfillment",
+    "@type" : "owl:Class",
+    "comment" : "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.",
+    "label" : "vf:Fulfillment"
+  }, {
     "@id" : "vf:Location",
     "@type" : "owl:Class",
     "label" : "vf:Location"
@@ -218,10 +223,24 @@
     "domain" : "vf:EconomicEvent",
     "label" : "duration"
   }, {
+    "@id" : "vf:fulfilledBy",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The economic event which completely or partially fulfills a commitment.",
+    "domain" : "vf:Fulfillment",
+    "label" : "fulfilled by",
+    "range" : "vf:EconomicEvent"
+  }, {
+    "@id" : "vf:fulfilledQuantity",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The quantity of the fulfillment of an event towards a commitment.",
+    "domain" : "vf:Fulfillment",
+    "label" : "fulfilled quantity",
+    "range" : "qudt:QuantityValue"
+  }, {
     "@id" : "vf:fulfills",
     "@type" : "owl:ObjectProperty",
-    "comment" : "The economic event which completely or partially fulfills a commitment on a process.",
-    "domain" : "vf:EconomicEvent",
+    "comment" : "The commitment which is completely or partially fulfilled by an economic event.",
+    "domain" : "vf:Fulfillment",
     "label" : "fulfills",
     "range" : "vf:Commitment"
   }, {

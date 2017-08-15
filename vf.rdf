@@ -38,6 +38,10 @@
     <rdfs:comment>A resource which is useful to people or the ecosystem.</rdfs:comment>
     <rdfs:label>vf:EconomicResource</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/valueflows#Fulfillment">
+    <rdfs:comment>The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.</rdfs:comment>
+    <rdfs:label>vf:Fulfillment</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/#Agent">
     <rdfs:comment>A person or group or organization with economic agency.</rdfs:comment>
     <rdfs:label>foaf:Agent</rdfs:label>
@@ -116,8 +120,8 @@
     <rdfs:label>relationship</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#fulfills">
-    <rdfs:comment>The economic event which completely or partially fulfills a commitment on a process.</rdfs:comment>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:comment>The commitment which is completely or partially fulfilled by an economic event.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Fulfillment"/>
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Commitment"/>
     <rdfs:label>fulfills</rdfs:label>
   </owl:ObjectProperty>
@@ -137,6 +141,18 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>object</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#AgentRelationship"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#fulfilledQuantity">
+    <rdfs:comment>The quantity of the fulfillment of an event towards a commitment.</rdfs:comment>
+    <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Fulfillment"/>
+    <rdfs:label>fulfilled quantity</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#fulfilledBy">
+    <rdfs:comment>The economic event which completely or partially fulfills a commitment.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Fulfillment"/>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:label>fulfilled by</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#under">
     <rdfs:comment>Reference an agreement between agents which specifies the rules or policies which govern this event.</rdfs:comment>
