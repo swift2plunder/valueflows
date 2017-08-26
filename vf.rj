@@ -104,10 +104,28 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#ExchangeClassification" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "An exchange category, model, taxonomy item, tag, facet value, or other kind of classification."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:ExchangeClassification"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#relationship" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
-      "value" : "A verb that describes a generic defined relationship that exists between 2 agents."
+      "value" : "A kind of relationship that exists between 2 agents."
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
@@ -127,7 +145,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      "value" : "https://w3id.org/valueflows#AgentRelationshipClassification"
     }
      ]
   }
@@ -187,6 +205,52 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "http://xmlns.com/foaf/0.1/#Agent"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#committedResourceClassifiedAs" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The primary classification that describes a resource committed, at any level of granularity."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "committed resource classified by"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#ResourceClassification"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#ProcessClassification" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A process category, model, taxonomy item, tag, facet value, or other kind of classification."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:ProcessClassification"
     }
      ]
   }
@@ -284,29 +348,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#EconomicEvent"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows#Transportation" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A process that changes the location of a resource(s) without changing the resource(s) itself."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Transportation"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Process"
     }
      ]
   }
@@ -467,6 +508,62 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#exchangeClassifiedAs" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The primary classification that describes an exchange agreement, at any level of granularity."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#ExchangeAgreement"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "exchange classified by"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#ExchangeClassification"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#processClassifiedAs" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The primary classification that describes a process, at any level of granularity."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Process"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "process classified by"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#ProcessClassification"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#image" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -489,6 +586,34 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "use"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#resourceClassifiedAs" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "Relates a resource to its primary classification, as part of describing that resource."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicResource"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "resource classified by"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#ResourceClassification"
     }
      ]
   }
@@ -728,6 +853,29 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#AgentRelationshipRole" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A relationship role defining the kind of association one agent can have with another."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:AgentRelationshipRole"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#committedUnder" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -770,6 +918,24 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:Commitment"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#ResourceClassification" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "A resource category, model, taxonomy item, tag, facet value, or other kind of classification."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#Class"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "vf:ResourceClassification"
     }
      ]
   }
@@ -1160,34 +1326,6 @@
      ]
   }
    ,
-  "https://w3id.org/valueflows#resourceCategory" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A type or categorization that describes a resource, at any level of granularity."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicResource"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "category"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#ResourceTaxonomyItem"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#note" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1345,24 +1483,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows#ResourceTaxonomyItem" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A resource category, part of a taxonomy."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:ResourceTaxonomyItem"
     }
      ]
   }
@@ -1565,57 +1685,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#EconomicResource"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows#committedCategory" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A type or categorization that describes a resource committed, at any level of granularity."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "committed category"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#ResourceTaxonomyItem"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows#Transformation" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "A process that produces something new from other resources, or improves an existing resource."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#Class"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "vf:Transformation"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Process"
     }
      ]
   }

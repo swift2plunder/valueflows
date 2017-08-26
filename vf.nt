@@ -1,9 +1,5 @@
 <https://w3id.org/valueflows#decrement> <http://www.w3.org/2000/01/rdf-schema#label> "decrement" .
 <https://w3id.org/valueflows#decrement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
-<https://w3id.org/valueflows#Transportation> <http://www.w3.org/2000/01/rdf-schema#comment> "A process that changes the location of a resource(s) without changing the resource(s) itself." .
-<https://w3id.org/valueflows#Transportation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valueflows#Process> .
-<https://w3id.org/valueflows#Transportation> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Transportation" .
-<https://w3id.org/valueflows#Transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#outputOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Process> .
 <https://w3id.org/valueflows#outputOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#outputOf> <http://www.w3.org/2000/01/rdf-schema#label> "output of" .
@@ -21,6 +17,11 @@
 <https://w3id.org/valueflows#subject> <http://www.w3.org/2000/01/rdf-schema#label> "subject" .
 <https://w3id.org/valueflows#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#AgentRelationship> .
 <https://w3id.org/valueflows#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#resourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a resource to its primary classification, as part of describing that resource." .
+<https://w3id.org/valueflows#resourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ResourceClassification> .
+<https://w3id.org/valueflows#resourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
+<https://w3id.org/valueflows#resourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "resource classified by" .
+<https://w3id.org/valueflows#resourceClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#load> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#decrement> .
 <https://w3id.org/valueflows#load> <http://www.w3.org/2000/01/rdf-schema#label> "load" .
 <https://w3id.org/valueflows#load> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
@@ -35,10 +36,6 @@
 <https://w3id.org/valueflows#underlyingResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#increment> <http://www.w3.org/2000/01/rdf-schema#label> "increment" .
 <https://w3id.org/valueflows#increment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
-<https://w3id.org/valueflows#Transformation> <http://www.w3.org/2000/01/rdf-schema#comment> "A process that produces something new from other resources, or improves an existing resource." .
-<https://w3id.org/valueflows#Transformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valueflows#Process> .
-<https://w3id.org/valueflows#Transformation> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Transformation" .
-<https://w3id.org/valueflows#Transformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#context> <http://www.w3.org/2000/01/rdf-schema#comment> "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context." .
 <https://w3id.org/valueflows#context> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/#Agent> .
 <https://w3id.org/valueflows#context> <http://www.w3.org/2000/01/rdf-schema#label> "context" .
@@ -76,9 +73,18 @@
 <https://w3id.org/valueflows#appreciationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Appreciation> .
 <https://w3id.org/valueflows#appreciationOf> <http://www.w3.org/2000/01/rdf-schema#label> "appreciation of" .
 <https://w3id.org/valueflows#appreciationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#processClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary classification that describes a process, at any level of granularity." .
+<https://w3id.org/valueflows#processClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ProcessClassification> .
+<https://w3id.org/valueflows#processClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Process> .
+<https://w3id.org/valueflows#processClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "process classified by" .
+<https://w3id.org/valueflows#processClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#AgentRelationship> <http://www.w3.org/2000/01/rdf-schema#comment> "An ongoing voluntary association between 2 Agents of any kind." .
 <https://w3id.org/valueflows#AgentRelationship> <http://www.w3.org/2000/01/rdf-schema#label> "vf:AgentRelationship" .
 <https://w3id.org/valueflows#AgentRelationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship role defining the kind of association one agent can have with another." .
+<https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/2000/01/rdf-schema#label> "vf:AgentRelationshipRole" .
+<https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#object> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of a relationship between 2 agents." .
 <https://w3id.org/valueflows#object> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/#Agent> .
 <https://w3id.org/valueflows#object> <http://www.w3.org/2000/01/rdf-schema#label> "object" .
@@ -99,6 +105,9 @@
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource which is useful to people or the ecosystem." .
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/2000/01/rdf-schema#label> "vf:EconomicResource" .
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#ExchangeClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "An exchange category, model, taxonomy item, tag, facet value, or other kind of classification." .
+<https://w3id.org/valueflows#ExchangeClassification> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ExchangeClassification" .
+<https://w3id.org/valueflows#ExchangeClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Usually a more formally defined structure than Group, often legally defined, can be a group or not." .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/#Agent> .
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "org:Organization" .
@@ -107,9 +116,6 @@
 <https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valueflows#Agreement> .
 <https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ExchangeAgreement" .
 <https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#ResourceTaxonomyItem> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource category, part of a taxonomy." .
-<https://w3id.org/valueflows#ResourceTaxonomyItem> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ResourceTaxonomyItem" .
-<https://w3id.org/valueflows#ResourceTaxonomyItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#produce> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#increment> .
 <https://w3id.org/valueflows#produce> <http://www.w3.org/2000/01/rdf-schema#label> "produce" .
 <https://w3id.org/valueflows#produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
@@ -163,6 +169,9 @@
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies." .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Agreement" .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/valueflows#ResourceClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource category, model, taxonomy item, tag, facet value, or other kind of classification." .
+<https://w3id.org/valueflows#ResourceClassification> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ResourceClassification" .
+<https://w3id.org/valueflows#ResourceClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#committedUnder> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference an agreement between agents which specifies the rules or policies which govern this commitment." .
 <https://w3id.org/valueflows#committedUnder> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Agreement> .
 <https://w3id.org/valueflows#committedUnder> <http://www.w3.org/2000/01/rdf-schema#label> "committed under" .
@@ -173,11 +182,21 @@
 <https://w3id.org/valueflows#Commitment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#cite> <http://www.w3.org/2000/01/rdf-schema#label> "cite" .
 <https://w3id.org/valueflows#cite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
+<https://w3id.org/valueflows#committedResourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary classification that describes a resource committed, at any level of granularity." .
+<https://w3id.org/valueflows#committedResourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ResourceClassification> .
+<https://w3id.org/valueflows#committedResourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
+<https://w3id.org/valueflows#committedResourceClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "committed resource classified by" .
+<https://w3id.org/valueflows#committedResourceClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#quantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The current amount and unit of the economic resource." .
 <https://w3id.org/valueflows#quantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
 <https://w3id.org/valueflows#quantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
 <https://w3id.org/valueflows#quantity> <http://www.w3.org/2000/01/rdf-schema#label> "quantity" .
 <https://w3id.org/valueflows#quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#exchangeClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The primary classification that describes an exchange agreement, at any level of granularity." .
+<https://w3id.org/valueflows#exchangeClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ExchangeClassification> .
+<https://w3id.org/valueflows#exchangeClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#ExchangeAgreement> .
+<https://w3id.org/valueflows#exchangeClassifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "exchange classified by" .
+<https://w3id.org/valueflows#exchangeClassifiedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available." .
 <https://w3id.org/valueflows#Process> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Process" .
 <https://w3id.org/valueflows#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -216,14 +235,17 @@
 <https://w3id.org/valueflows#receiver> <http://www.w3.org/2000/01/rdf-schema#label> "receiver" .
 <https://w3id.org/valueflows#receiver> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#receiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "A verb that describes a generic defined relationship that exists between 2 agents." .
-<https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of relationship that exists between 2 agents." .
+<https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#AgentRelationshipClassification> .
 <https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#AgentRelationship> .
 <https://w3id.org/valueflows#relationship> <http://www.w3.org/2000/01/rdf-schema#label> "relationship" .
 <https://w3id.org/valueflows#relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#name> <http://www.w3.org/2000/01/rdf-schema#comment> "An informal or formal textual identifier for an object. Does not imply uniqueness." .
 <https://w3id.org/valueflows#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
 <https://w3id.org/valueflows#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/valueflows#ProcessClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "A process category, model, taxonomy item, tag, facet value, or other kind of classification." .
+<https://w3id.org/valueflows#ProcessClassification> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ProcessClassification" .
+<https://w3id.org/valueflows#ProcessClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#committedOutputOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Process> .
 <https://w3id.org/valueflows#committedOutputOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
 <https://w3id.org/valueflows#committedOutputOf> <http://www.w3.org/2000/01/rdf-schema#label> "committed output of" .
@@ -233,11 +255,6 @@
 <https://w3id.org/valueflows#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
 <https://w3id.org/valueflows#involves> <http://www.w3.org/2000/01/rdf-schema#label> "involves" .
 <https://w3id.org/valueflows#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#resourceCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A type or categorization that describes a resource, at any level of granularity." .
-<https://w3id.org/valueflows#resourceCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ResourceTaxonomyItem> .
-<https://w3id.org/valueflows#resourceCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
-<https://w3id.org/valueflows#resourceCategory> <http://www.w3.org/2000/01/rdf-schema#label> "category" .
-<https://w3id.org/valueflows#resourceCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Process> .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2000/01/rdf-schema#label> "input of" .
@@ -274,8 +291,3 @@
 <https://w3id.org/valueflows#primaryLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/#Agent> .
 <https://w3id.org/valueflows#primaryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "primary location" .
 <https://w3id.org/valueflows#primaryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#committedCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "A type or categorization that describes a resource committed, at any level of granularity." .
-<https://w3id.org/valueflows#committedCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#ResourceTaxonomyItem> .
-<https://w3id.org/valueflows#committedCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
-<https://w3id.org/valueflows#committedCategory> <http://www.w3.org/2000/01/rdf-schema#label> "committed category" .
-<https://w3id.org/valueflows#committedCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

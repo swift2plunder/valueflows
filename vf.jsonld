@@ -28,6 +28,12 @@
     "comment" : "An ongoing voluntary association between 2 Agents of any kind.",
     "label" : "vf:AgentRelationship"
   }, {
+    "@id" : "vf:AgentRelationshipRole",
+    "@type" : "owl:Class",
+    "comment" : "A relationship role defining the kind of association one agent can have with another.",
+    "label" : "vf:AgentRelationshipRole",
+    "subClassOf" : "rdf:Property"
+  }, {
     "@id" : "vf:Agreement",
     "@type" : "owl:Class",
     "comment" : "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies.",
@@ -59,6 +65,11 @@
     "label" : "vf:ExchangeAgreement",
     "subClassOf" : "vf:Agreement"
   }, {
+    "@id" : "vf:ExchangeClassification",
+    "@type" : "owl:Class",
+    "comment" : "An exchange category, model, taxonomy item, tag, facet value, or other kind of classification.",
+    "label" : "vf:ExchangeClassification"
+  }, {
     "@id" : "vf:Fulfillment",
     "@type" : "owl:Class",
     "comment" : "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.",
@@ -73,22 +84,15 @@
     "comment" : "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available.",
     "label" : "vf:Process"
   }, {
-    "@id" : "vf:ResourceTaxonomyItem",
+    "@id" : "vf:ProcessClassification",
     "@type" : "owl:Class",
-    "comment" : "A resource category, part of a taxonomy.",
-    "label" : "vf:ResourceTaxonomyItem"
+    "comment" : "A process category, model, taxonomy item, tag, facet value, or other kind of classification.",
+    "label" : "vf:ProcessClassification"
   }, {
-    "@id" : "vf:Transformation",
+    "@id" : "vf:ResourceClassification",
     "@type" : "owl:Class",
-    "comment" : "A process that produces something new from other resources, or improves an existing resource.",
-    "label" : "vf:Transformation",
-    "subClassOf" : "vf:Process"
-  }, {
-    "@id" : "vf:Transportation",
-    "@type" : "owl:Class",
-    "comment" : "A process that changes the location of a resource(s) without changing the resource(s) itself.",
-    "label" : "vf:Transportation",
-    "subClassOf" : "vf:Process"
+    "comment" : "A resource category, model, taxonomy item, tag, facet value, or other kind of classification.",
+    "label" : "vf:ResourceClassification"
   }, {
     "@id" : "vf:accept",
     "@type" : "vf:Action",
@@ -140,13 +144,6 @@
     "label" : "committed action",
     "range" : "vf:Action"
   }, {
-    "@id" : "vf:committedCategory",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "A type or categorization that describes a resource committed, at any level of granularity.",
-    "domain" : "vf:Commitment",
-    "label" : "committed category",
-    "range" : "vf:ResourceTaxonomyItem"
-  }, {
     "@id" : "vf:committedInputOf",
     "@type" : "owl:ObjectProperty",
     "domain" : "vf:Commitment",
@@ -172,6 +169,13 @@
     "domain" : "vf:Commitment",
     "label" : "committed receiver",
     "range" : "foaf:Agent"
+  }, {
+    "@id" : "vf:committedResourceClassifiedAs",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The primary classification that describes a resource committed, at any level of granularity.",
+    "domain" : "vf:Commitment",
+    "label" : "committed resource classified by",
+    "range" : "vf:ResourceClassification"
   }, {
     "@id" : "vf:committedScope",
     "@type" : "owl:ObjectProperty",
@@ -222,6 +226,13 @@
     "comment" : "The observed duration of the economic event.",
     "domain" : "vf:EconomicEvent",
     "label" : "duration"
+  }, {
+    "@id" : "vf:exchangeClassifiedAs",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The primary classification that describes an exchange agreement, at any level of granularity.",
+    "domain" : "vf:ExchangeAgreement",
+    "label" : "exchange classified by",
+    "range" : "vf:ExchangeClassification"
   }, {
     "@id" : "vf:fulfilledBy",
     "@type" : "owl:ObjectProperty",
@@ -317,6 +328,13 @@
     "label" : "primary location",
     "range" : "vf:Location"
   }, {
+    "@id" : "vf:processClassifiedAs",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The primary classification that describes a process, at any level of granularity.",
+    "domain" : "vf:Process",
+    "label" : "process classified by",
+    "range" : "vf:ProcessClassification"
+  }, {
     "@id" : "vf:produce",
     "@type" : "vf:Action",
     "label" : "produce",
@@ -350,17 +368,17 @@
   }, {
     "@id" : "vf:relationship",
     "@type" : "owl:ObjectProperty",
-    "comment" : "A verb that describes a generic defined relationship that exists between 2 agents.",
+    "comment" : "A kind of relationship that exists between 2 agents.",
     "domain" : "vf:AgentRelationship",
     "label" : "relationship",
-    "range" : "rdf:Property"
+    "range" : "vf:AgentRelationshipClassification"
   }, {
-    "@id" : "vf:resourceCategory",
+    "@id" : "vf:resourceClassifiedAs",
     "@type" : "owl:ObjectProperty",
-    "comment" : "A type or categorization that describes a resource, at any level of granularity.",
+    "comment" : "Relates a resource to its primary classification, as part of describing that resource.",
     "domain" : "vf:EconomicResource",
-    "label" : "category",
-    "range" : "vf:ResourceTaxonomyItem"
+    "label" : "resource classified by",
+    "range" : "vf:ResourceClassification"
   }, {
     "@id" : "vf:scope",
     "@type" : "owl:ObjectProperty",
@@ -429,13 +447,6 @@
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "subClassOf" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
@@ -443,6 +454,9 @@
     "domain" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
       "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "subPropertyOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
@@ -458,6 +472,10 @@
     },
     "title" : {
       "@id" : "http://purl.org/dc/terms/title"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
     },
     "vf" : "https://w3id.org/valueflows#",
     "schema" : "http://schema.org/",

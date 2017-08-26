@@ -26,9 +26,18 @@
     <rdfs:comment>An inflow or outflow of an economic resource in relation to a process and/or exchange. This could reflect a change in the quantity of a vf:EconomicResource. It is also defined by its behavior in relation to the vf:EconomicResource and a vf:Process (consume, use, produce, etc.)</rdfs:comment>
     <rdfs:label>vf:EconomicEvent</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/valueflows#AgentRelationshipRole">
+    <rdfs:comment>A relationship role defining the kind of association one agent can have with another.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label>vf:AgentRelationshipRole</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/valueflows#Commitment">
     <rdfs:comment>A planned economic event or transfer that has been promised by an agent to another agent.</rdfs:comment>
     <rdfs:label>vf:Commitment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/valueflows#ResourceClassification">
+    <rdfs:comment>A resource category, model, taxonomy item, tag, facet value, or other kind of classification.</rdfs:comment>
+    <rdfs:label>vf:ResourceClassification</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/valueflows#AgentRelationship">
     <rdfs:comment>An ongoing voluntary association between 2 Agents of any kind.</rdfs:comment>
@@ -38,17 +47,21 @@
     <rdfs:comment>A resource which is useful to people or the ecosystem.</rdfs:comment>
     <rdfs:label>vf:EconomicResource</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/valueflows#ExchangeClassification">
+    <rdfs:comment>An exchange category, model, taxonomy item, tag, facet value, or other kind of classification.</rdfs:comment>
+    <rdfs:label>vf:ExchangeClassification</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/valueflows#Fulfillment">
     <rdfs:comment>The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.</rdfs:comment>
     <rdfs:label>vf:Fulfillment</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/valueflows#ProcessClassification">
+    <rdfs:comment>A process category, model, taxonomy item, tag, facet value, or other kind of classification.</rdfs:comment>
+    <rdfs:label>vf:ProcessClassification</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="http://xmlns.com/foaf/0.1/#Agent">
     <rdfs:comment>A person or group or organization with economic agency.</rdfs:comment>
     <rdfs:label>foaf:Agent</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/valueflows#ResourceTaxonomyItem">
-    <rdfs:comment>A resource category, part of a taxonomy.</rdfs:comment>
-    <rdfs:label>vf:ResourceTaxonomyItem</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://w3id.org/valueflows#Appreciation">
     <rdfs:comment>A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy.</rdfs:comment>
@@ -68,11 +81,6 @@
     <rdfs:comment>An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available.</rdfs:comment>
     <rdfs:label>vf:Process</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/valueflows#Transportation">
-    <rdfs:comment>A process that changes the location of a resource(s) without changing the resource(s) itself.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:label>vf:Transportation</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="https://w3id.org/valueflows#Location">
     <rdfs:label>vf:Location</rdfs:label>
   </owl:Class>
@@ -84,11 +92,6 @@
     <rdfs:comment>Usually a more formally defined structure than Group, often legally defined, can be a group or not.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>org:Organization</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://w3id.org/valueflows#Transformation">
-    <rdfs:comment>A process that produces something new from other resources, or improves an existing resource.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:label>vf:Transformation</rdfs:label>
   </owl:Class>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedScope">
     <rdfs:comment>The larger boundary or context of a commitment, used for accounting, planning.</rdfs:comment>
@@ -114,8 +117,8 @@
     <rdfs:label>involves</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#relationship">
-    <rdfs:comment>A verb that describes a generic defined relationship that exists between 2 agents.</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>A kind of relationship that exists between 2 agents.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#AgentRelationshipClassification"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#AgentRelationship"/>
     <rdfs:label>relationship</rdfs:label>
   </owl:ObjectProperty>
@@ -130,6 +133,12 @@
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>provider</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedResourceClassifiedAs">
+    <rdfs:comment>The primary classification that describes a resource committed, at any level of granularity.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceClassification"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
+    <rdfs:label>committed resource classified by</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#inputOf">
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Process"/>
@@ -210,12 +219,6 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:label>quantity</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#resourceCategory">
-    <rdfs:comment>A type or categorization that describes a resource, at any level of granularity.</rdfs:comment>
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceTaxonomyItem"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
-    <rdfs:label>category</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedAction">
     <rdfs:comment>Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.</rdfs:comment>
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Action"/>
@@ -245,11 +248,29 @@
     <rdfs:label>committed receiver</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#exchangeClassifiedAs">
+    <rdfs:comment>The primary classification that describes an exchange agreement, at any level of granularity.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#ExchangeClassification"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#ExchangeAgreement"/>
+    <rdfs:label>exchange classified by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#processClassifiedAs">
+    <rdfs:comment>The primary classification that describes a process, at any level of granularity.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#ProcessClassification"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>process classified by</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedProvider">
     <rdfs:comment>The economic agent who commits to a future economic event.</rdfs:comment>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>committed provider</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#resourceClassifiedAs">
+    <rdfs:comment>Relates a resource to its primary classification, as part of describing that resource.</rdfs:comment>
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceClassification"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
+    <rdfs:label>resource classified by</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#action">
     <rdfs:comment>Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.</rdfs:comment>
@@ -298,12 +319,6 @@
     <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:label>underlying resource</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedCategory">
-    <rdfs:comment>A type or categorization that describes a resource committed, at any level of granularity.</rdfs:comment>
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceTaxonomyItem"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-    <rdfs:label>committed category</rdfs:label>
   </owl:ObjectProperty>
   <owl:DatatypeProperty rdf:about="https://w3id.org/valueflows#name">
     <rdfs:comment>An informal or formal textual identifier for an object. Does not imply uniqueness.</rdfs:comment>

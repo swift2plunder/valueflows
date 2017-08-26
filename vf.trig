@@ -13,11 +13,6 @@
 vf:decrement  a     vf:Action ;
         rdfs:label  "decrement" .
 
-vf:Transportation  a     owl:Class ;
-        rdfs:comment     "A process that changes the location of a resource(s) without changing the resource(s) itself." ;
-        rdfs:label       "vf:Transportation" ;
-        rdfs:subClassOf  vf:Process .
-
 vf:outputOf  a       owl:ObjectProperty ;
         rdfs:domain  vf:EconomicEvent ;
         rdfs:label   "output of" ;
@@ -39,6 +34,13 @@ vf:subject  a         owl:ObjectProperty ;
         rdfs:label    "subject" ;
         rdfs:range    foaf:Agent .
 
+vf:resourceClassifiedAs
+        a             owl:ObjectProperty ;
+        rdfs:comment  "Relates a resource to its primary classification, as part of describing that resource." ;
+        rdfs:domain   vf:EconomicResource ;
+        rdfs:label    "resource classified by" ;
+        rdfs:range    vf:ResourceClassification .
+
 vf:load  a                  vf:Action ;
         rdfs:label          "load" ;
         rdfs:subPropertyOf  vf:decrement .
@@ -57,11 +59,6 @@ vf:underlyingResource
 
 vf:increment  a     vf:Action ;
         rdfs:label  "increment" .
-
-vf:Transformation  a     owl:Class ;
-        rdfs:comment     "A process that produces something new from other resources, or improves an existing resource." ;
-        rdfs:label       "vf:Transformation" ;
-        rdfs:subClassOf  vf:Process .
 
 vf:context  a         owl:ObjectProperty ;
         rdfs:comment  "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context." ;
@@ -111,9 +108,22 @@ vf:appreciationOf  a  owl:ObjectProperty ;
         rdfs:label    "appreciation of" ;
         rdfs:range    vf:EconomicEvent .
 
+vf:processClassifiedAs
+        a             owl:ObjectProperty ;
+        rdfs:comment  "The primary classification that describes a process, at any level of granularity." ;
+        rdfs:domain   vf:Process ;
+        rdfs:label    "process classified by" ;
+        rdfs:range    vf:ProcessClassification .
+
 vf:AgentRelationship  a  owl:Class ;
         rdfs:comment  "An ongoing voluntary association between 2 Agents of any kind." ;
         rdfs:label    "vf:AgentRelationship" .
+
+vf:AgentRelationshipRole
+        a                owl:Class ;
+        rdfs:comment     "A relationship role defining the kind of association one agent can have with another." ;
+        rdfs:label       "vf:AgentRelationshipRole" ;
+        rdfs:subClassOf  rdf:Property .
 
 vf:object  a          owl:ObjectProperty ;
         rdfs:comment  "The object of a relationship between 2 agents." ;
@@ -140,6 +150,11 @@ vf:EconomicResource  a  owl:Class ;
         rdfs:comment  "A resource which is useful to people or the ecosystem." ;
         rdfs:label    "vf:EconomicResource" .
 
+vf:ExchangeClassification
+        a             owl:Class ;
+        rdfs:comment  "An exchange category, model, taxonomy item, tag, facet value, or other kind of classification." ;
+        rdfs:label    "vf:ExchangeClassification" .
+
 org:Organization  a      owl:Class ;
         rdfs:comment     "Usually a more formally defined structure than Group, often legally defined, can be a group or not." ;
         rdfs:label       "org:Organization" ;
@@ -149,11 +164,6 @@ vf:ExchangeAgreement  a  owl:Class ;
         rdfs:comment     "An agreement to exchange something with another agent(s), containing vf:Commitments towards that end." ;
         rdfs:label       "vf:ExchangeAgreement" ;
         rdfs:subClassOf  vf:Agreement .
-
-vf:ResourceTaxonomyItem
-        a             owl:Class ;
-        rdfs:comment  "A resource category, part of a taxonomy." ;
-        rdfs:label    "vf:ResourceTaxonomyItem" .
 
 vf:produce  a               vf:Action ;
         rdfs:label          "produce" ;
@@ -222,6 +232,11 @@ vf:Agreement  a       owl:Class ;
         rdfs:comment  "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies." ;
         rdfs:label    "vf:Agreement" .
 
+vf:ResourceClassification
+        a             owl:Class ;
+        rdfs:comment  "A resource category, model, taxonomy item, tag, facet value, or other kind of classification." ;
+        rdfs:label    "vf:ResourceClassification" .
+
 vf:committedUnder  a  owl:ObjectProperty ;
         rdfs:comment  "Reference an agreement between agents which specifies the rules or policies which govern this commitment." ;
         rdfs:domain   vf:Commitment ;
@@ -235,11 +250,25 @@ vf:Commitment  a      owl:Class ;
 vf:cite  a          vf:Action ;
         rdfs:label  "cite" .
 
+vf:committedResourceClassifiedAs
+        a             owl:ObjectProperty ;
+        rdfs:comment  "The primary classification that describes a resource committed, at any level of granularity." ;
+        rdfs:domain   vf:Commitment ;
+        rdfs:label    "committed resource classified by" ;
+        rdfs:range    vf:ResourceClassification .
+
 vf:quantity  a        owl:ObjectProperty ;
         rdfs:comment  "The current amount and unit of the economic resource." ;
         rdfs:domain   vf:EconomicResource ;
         rdfs:label    "quantity" ;
         rdfs:range    qudt:QuantityValue .
+
+vf:exchangeClassifiedAs
+        a             owl:ObjectProperty ;
+        rdfs:comment  "The primary classification that describes an exchange agreement, at any level of granularity." ;
+        rdfs:domain   vf:ExchangeAgreement ;
+        rdfs:label    "exchange classified by" ;
+        rdfs:range    vf:ExchangeClassification .
 
 vf:Process  a         owl:Class ;
         rdfs:comment  "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available." ;
@@ -290,14 +319,19 @@ vf:receiver  a        owl:ObjectProperty ;
         rdfs:range    foaf:Agent .
 
 vf:relationship  a    owl:ObjectProperty ;
-        rdfs:comment  "A verb that describes a generic defined relationship that exists between 2 agents." ;
+        rdfs:comment  "A kind of relationship that exists between 2 agents." ;
         rdfs:domain   vf:AgentRelationship ;
         rdfs:label    "relationship" ;
-        rdfs:range    rdf:Property .
+        rdfs:range    vf:AgentRelationshipClassification .
 
 vf:name  a            owl:DatatypeProperty ;
         rdfs:comment  "An informal or formal textual identifier for an object. Does not imply uniqueness." ;
         rdfs:label    "name" .
+
+vf:ProcessClassification
+        a             owl:Class ;
+        rdfs:comment  "A process category, model, taxonomy item, tag, facet value, or other kind of classification." ;
+        rdfs:label    "vf:ProcessClassification" .
 
 vf:committedOutputOf  a  owl:ObjectProperty ;
         rdfs:domain  vf:Commitment ;
@@ -309,12 +343,6 @@ vf:involves  a        owl:ObjectProperty ;
         rdfs:domain   vf:Commitment ;
         rdfs:label    "involves" ;
         rdfs:range    vf:EconomicResource .
-
-vf:resourceCategory  a  owl:ObjectProperty ;
-        rdfs:comment  "A type or categorization that describes a resource, at any level of granularity." ;
-        rdfs:domain   vf:EconomicResource ;
-        rdfs:label    "category" ;
-        rdfs:range    vf:ResourceTaxonomyItem .
 
 vf:inputOf  a        owl:ObjectProperty ;
         rdfs:domain  vf:EconomicEvent ;
@@ -360,9 +388,3 @@ vf:primaryLocation  a  owl:ObjectProperty ;
         rdfs:domain   foaf:Agent ;
         rdfs:label    "primary location" ;
         rdfs:range    vf:Location .
-
-vf:committedCategory  a  owl:ObjectProperty ;
-        rdfs:comment  "A type or categorization that describes a resource committed, at any level of granularity." ;
-        rdfs:domain   vf:Commitment ;
-        rdfs:label    "committed category" ;
-        rdfs:range    vf:ResourceTaxonomyItem .

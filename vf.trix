@@ -11,26 +11,6 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
-      <uri>https://w3id.org/valueflows#Transportation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A process that changes the location of a resource(s) without changing the resource(s) itself.</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transportation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#subClassOf</uri>
-      <uri>https://w3id.org/valueflows#Process</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transportation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:Transportation</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transportation</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>http://www.w3.org/2002/07/owl#Class</uri>
-    </triple>
-    <triple>
       <uri>https://w3id.org/valueflows#outputOf</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
       <uri>https://w3id.org/valueflows#Process</uri>
@@ -116,6 +96,31 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">Relates a resource to its primary classification, as part of describing that resource.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>https://w3id.org/valueflows#ResourceClassification</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#EconomicResource</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">resource classified by</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#load</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#subPropertyOf</uri>
       <uri>https://w3id.org/valueflows#decrement</uri>
@@ -184,26 +189,6 @@
       <uri>https://w3id.org/valueflows#increment</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>https://w3id.org/valueflows#Action</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transformation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A process that produces something new from other resources, or improves an existing resource.</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transformation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#subClassOf</uri>
-      <uri>https://w3id.org/valueflows#Process</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transformation</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:Transformation</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#Transformation</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#context</uri>
@@ -391,6 +376,31 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#processClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The primary classification that describes a process, at any level of granularity.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#processClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>https://w3id.org/valueflows#ProcessClassification</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#processClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#Process</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#processClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">process classified by</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#processClassifiedAs</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#AgentRelationship</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">An ongoing voluntary association between 2 Agents of any kind.</typedLiteral>
@@ -402,6 +412,26 @@
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#AgentRelationship</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#Class</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#AgentRelationshipRole</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A relationship role defining the kind of association one agent can have with another.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#AgentRelationshipRole</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#subClassOf</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#AgentRelationshipRole</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:AgentRelationshipRole</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#AgentRelationshipRole</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
@@ -506,6 +536,21 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#ExchangeClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">An exchange category, model, taxonomy item, tag, facet value, or other kind of classification.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ExchangeClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:ExchangeClassification</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ExchangeClassification</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#Class</uri>
+    </triple>
+    <triple>
       <uri>http://www.w3.org/ns/org#Organization</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">Usually a more formally defined structure than Group, often legally defined, can be a group or not.</typedLiteral>
@@ -542,21 +587,6 @@
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#ExchangeAgreement</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>http://www.w3.org/2002/07/owl#Class</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#ResourceTaxonomyItem</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A resource category, part of a taxonomy.</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#ResourceTaxonomyItem</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:ResourceTaxonomyItem</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#ResourceTaxonomyItem</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
@@ -826,6 +856,21 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#ResourceClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A resource category, model, taxonomy item, tag, facet value, or other kind of classification.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ResourceClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:ResourceClassification</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ResourceClassification</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#Class</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#committedUnder</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">Reference an agreement between agents which specifies the rules or policies which govern this commitment.</typedLiteral>
@@ -876,6 +921,31 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
+      <uri>https://w3id.org/valueflows#committedResourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The primary classification that describes a resource committed, at any level of granularity.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedResourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>https://w3id.org/valueflows#ResourceClassification</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedResourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedResourceClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">committed resource classified by</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#committedResourceClassifiedAs</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#quantity</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The current amount and unit of the economic resource.</typedLiteral>
@@ -897,6 +967,31 @@
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#quantity</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The primary classification that describes an exchange agreement, at any level of granularity.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
+      <uri>https://w3id.org/valueflows#ExchangeClassification</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
+      <uri>https://w3id.org/valueflows#ExchangeAgreement</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">exchange classified by</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
@@ -1093,12 +1188,12 @@
     <triple>
       <uri>https://w3id.org/valueflows#relationship</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A verb that describes a generic defined relationship that exists between 2 agents.</typedLiteral>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A kind of relationship that exists between 2 agents.</typedLiteral>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#relationship</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri>
+      <uri>https://w3id.org/valueflows#AgentRelationshipClassification</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#relationship</uri>
@@ -1129,6 +1224,21 @@
       <uri>https://w3id.org/valueflows#name</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#DatatypeProperty</uri>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ProcessClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A process category, model, taxonomy item, tag, facet value, or other kind of classification.</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ProcessClassification</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">vf:ProcessClassification</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#ProcessClassification</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#committedOutputOf</uri>
@@ -1172,31 +1282,6 @@
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#involves</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#resourceCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A type or categorization that describes a resource, at any level of granularity.</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#resourceCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
-      <uri>https://w3id.org/valueflows#ResourceTaxonomyItem</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#resourceCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <uri>https://w3id.org/valueflows#EconomicResource</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#resourceCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">category</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#resourceCategory</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
@@ -1377,31 +1462,6 @@
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#primaryLocation</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#committedCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">A type or categorization that describes a resource committed, at any level of granularity.</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#committedCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
-      <uri>https://w3id.org/valueflows#ResourceTaxonomyItem</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#committedCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#committedCategory</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">committed category</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#committedCategory</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
