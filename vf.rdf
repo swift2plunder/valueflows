@@ -93,17 +93,10 @@
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>org:Organization</rdfs:label>
   </owl:Class>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedScope">
-    <rdfs:comment>The larger boundary or context of a commitment, used for accounting, planning.</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:label>scope</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedUnder">
-    <rdfs:comment>Reference an agreement between agents which specifies the rules or policies which govern this commitment.</rdfs:comment>
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#Agreement"/>
-    <rdfs:label>committed under</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedInputs">
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#Commitment"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>committed inputs</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#start">
     <rdfs:comment>The starting date and optionally time of the economic event.</rdfs:comment>
@@ -122,6 +115,11 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#AgentRelationship"/>
     <rdfs:label>relationship</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedOutputs">
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#Commitment"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>committed outputs</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#fulfills">
     <rdfs:comment>The commitment which is completely or partially fulfilled by an economic event.</rdfs:comment>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Fulfillment"/>
@@ -129,20 +127,24 @@
     <rdfs:label>fulfills</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#provider">
-    <rdfs:comment>The economic agent from whom the economic event is initiated.</rdfs:comment>
+    <rdfs:comment>The economic agent from whom the intended, committed, or actual economic event is initiated.</rdfs:comment>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>provider</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedResourceClassifiedAs">
-    <rdfs:comment>The primary classification that describes a resource committed, at any level of granularity.</rdfs:comment>
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceClassification"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-    <rdfs:label>committed resource classified by</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#inputOf">
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
     <rdfs:label>input of</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#object">
@@ -167,7 +169,12 @@
     <rdfs:comment>Reference an agreement between agents which specifies the rules or policies which govern this event.</rdfs:comment>
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Agreement"/>
     <rdfs:label>under</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#primaryLocation">
     <rdfs:comment>The main place an agent is located, often an address where activities occur and mail can be sent. This is usually a mappable geographic location.  It also could be a website address, as in the case of agents who have no physical location.</rdfs:comment>
@@ -180,32 +187,42 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:label>duration</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedInputOf">
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-    <rdfs:label>committed input of</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#context">
     <rdfs:comment>The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context.</rdfs:comment>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>context</rdfs:label>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#AgentRelationship"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedOutputOf">
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-    <rdfs:label>committed output of</rdfs:label>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#outputs">
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>outputs</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#outputOf">
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Process"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
     <rdfs:label>output of</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#inputs">
+    <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>inputs</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#scope">
-    <rdfs:comment>The larger boundary or context of an economic event, used for accounting, planning, distributing income.</rdfs:comment>
+    <rdfs:comment>The larger boundary or context, used for accounting, planning, distributing income.</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label>scope</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#affects">
     <rdfs:comment>The economic resource that is decremented or incremented by the economic event, or just what the economic event is about.</rdfs:comment>
@@ -219,17 +236,16 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:label>quantity</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedAction">
-    <rdfs:comment>Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.</rdfs:comment>
-    <rdfs:range rdf:resource="https://w3id.org/valueflows#Action"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-    <rdfs:label>committed action</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#receiver">
-    <rdfs:comment>The economic agent whom the economic event is for.</rdfs:comment>
+    <rdfs:comment>The economic agent whom the intended, committed, or actual economic event is for.</rdfs:comment>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>receiver</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#note">
     <rdfs:comment>A textual comment or description.</rdfs:comment>
@@ -241,12 +257,6 @@
     <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
     <rdfs:label>contains</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedReceiver">
-    <rdfs:comment>The economic agent whom a future economic event is committed to.</rdfs:comment>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
-    <rdfs:label>committed receiver</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#exchangeClassifiedAs">
     <rdfs:comment>The primary classification that describes an exchange agreement, at any level of granularity.</rdfs:comment>
@@ -260,22 +270,26 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
     <rdfs:label>process classified by</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedProvider">
-    <rdfs:comment>The economic agent who commits to a future economic event.</rdfs:comment>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
-    <rdfs:label>committed provider</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Commitment"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#resourceClassifiedAs">
-    <rdfs:comment>Relates a resource to its primary classification, as part of describing that resource.</rdfs:comment>
+    <rdfs:comment>A resource's primary classification, as part of describing that resource.</rdfs:comment>
     <rdfs:range rdf:resource="https://w3id.org/valueflows#ResourceClassification"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
-    <rdfs:label>resource classified by</rdfs:label>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicResource"/>
+      </owl:unionOf>
+    </rdfs:domain>
+    <rdfs:label>resource classified as</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#action">
-    <rdfs:comment>Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.</rdfs:comment>
+    <rdfs:comment>Relates a process input or output to a verb, such as consume, produce, work, improve, etc.</rdfs:comment>
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Action"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
+    <rdfs:domain rdf:parseType="Resource">
+      <owl:unionOf rdf:parseType="Collection">
+        <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+      </owl:unionOf>
+    </rdfs:domain>
     <rdfs:label>action</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#appreciationOf">

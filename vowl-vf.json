@@ -8,17 +8,17 @@
     },
     "iri" : "https://w3id.org/valueflows/",
     "other" : {
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "undefined",
-        "value" : "Value Flows Ontology",
-        "type" : "label"
-      } ],
       "type" : [ {
         "identifier" : "type",
         "language" : "undefined",
         "value" : "http://purl.org/adms/assettype/Ontology",
         "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Value Flows Ontology",
+        "type" : "label"
       } ],
       "status" : [ {
         "identifier" : "status",
@@ -31,7 +31,7 @@
   "namespace" : [ ],
   "metrics" : {
     "classCount" : 23,
-    "objectPropertyCount" : 39,
+    "objectPropertyCount" : 35,
     "datatypePropertyCount" : 3,
     "individualCount" : 13
   },
@@ -42,53 +42,65 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "29",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "31",
     "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "32",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "47",
-    "type" : "owl:Thing"
   }, {
     "id" : "55",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "20",
+    "id" : "36",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
     "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:unionOf"
   }, {
     "id" : "3",
     "type" : "owl:Thing"
@@ -96,28 +108,40 @@
     "id" : "4",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "44",
+    "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "65",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "49",
@@ -159,12 +183,12 @@
       "IRI-based" : "Agent",
       "undefined" : "foaf:Agent"
     },
-    "subClasses" : [ "27", "28" ],
+    "subClasses" : [ "31", "32" ],
     "comment" : {
       "undefined" : "A person or group or organization with economic agency."
     },
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "18"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#note",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -173,7 +197,7 @@
       "IRI-based" : "note"
     },
     "attributes" : [ "external" ],
-    "id" : "29"
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/valueflows#Appreciation",
     "baseIri" : "https://w3id.org/valueflows",
@@ -186,21 +210,7 @@
       "undefined" : "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy."
     },
     "attributes" : [ "external" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.w3.org/ns/org#Organization",
-    "baseIri" : "http://www.w3.org/ns/org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Organization",
-      "undefined" : "org:Organization"
-    },
-    "comment" : {
-      "undefined" : "Usually a more formally defined structure than Group, often legally defined, can be a group or not."
-    },
-    "attributes" : [ "external" ],
-    "id" : "27",
-    "superClasses" : [ "17" ]
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/valueflows#ExchangeClassification",
     "baseIri" : "https://w3id.org/valueflows",
@@ -213,7 +223,42 @@
       "undefined" : "An exchange category, model, taxonomy item, tag, facet value, or other kind of classification."
     },
     "attributes" : [ "external" ],
-    "id" : "37"
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "org:Organization"
+    },
+    "comment" : {
+      "undefined" : "Usually a more formally defined structure than Group, often legally defined, can be a group or not."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "36",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "https://w3id.org/valueflows#EconomicEvent",
     "baseIri" : "https://w3id.org/valueflows",
@@ -226,7 +271,21 @@
       "undefined" : "An inflow or outflow of an economic resource in relation to a process and/or exchange. This could reflect a change in the quantity of a vf:EconomicResource. It is also defined by its behavior in relation to the vf:EconomicResource and a vf:Process (consume, use, produce, etc.)"
     },
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "16",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "https://w3id.org/valueflows#ResourceClassification",
     "baseIri" : "https://w3id.org/valueflows",
@@ -248,7 +307,7 @@
       "IRI-based" : "AgentRelationshipClassification"
     },
     "attributes" : [ "external" ],
-    "id" : "10"
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/valueflows#EconomicResource",
     "baseIri" : "https://w3id.org/valueflows",
@@ -261,38 +320,47 @@
       "undefined" : "A resource which is useful to people or the ecosystem."
     },
     "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "62"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "30"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "51"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "24" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "12"
   }, {
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "15"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "63"
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "7",
+    "id" : "3",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "24",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "32",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "47",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "55",
+    "id" : "4",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -309,7 +377,7 @@
       "undefined" : "A planned economic event or transfer that has been promised by an agent to another agent."
     },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/valueflows#Process",
     "baseIri" : "https://w3id.org/valueflows",
@@ -322,21 +390,17 @@
       "undefined" : "An activity that changes inputs into outputs.  It could transform or transport vf:EconomicResource(s), as well as simply issuing a resource so that it is available."
     },
     "attributes" : [ "external" ],
-    "id" : "35"
+    "id" : "40"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "3",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "65"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "4",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "instances" : 0,
+    "union" : [ "22", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/valueflows#Fulfillment",
     "baseIri" : "https://w3id.org/valueflows",
@@ -349,7 +413,7 @@
       "undefined" : "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment."
     },
     "attributes" : [ "external" ],
-    "id" : "44"
+    "id" : "58"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/#Person",
     "baseIri" : "http://xmlns.com/foaf/0.1/",
@@ -362,8 +426,8 @@
       "undefined" : "A natural person."
     },
     "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "17" ]
+    "id" : "32",
+    "superClasses" : [ "18" ]
   }, {
     "iri" : "https://w3id.org/valueflows#AgentRelationship",
     "baseIri" : "https://w3id.org/valueflows",
@@ -376,7 +440,7 @@
       "undefined" : "An ongoing voluntary association between 2 Agents of any kind."
     },
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "6"
   }, {
     "iri" : "https://w3id.org/valueflows#Location",
     "baseIri" : "https://w3id.org/valueflows",
@@ -386,7 +450,7 @@
       "undefined" : "vf:Location"
     },
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "19"
   }, {
     "iri" : "https://w3id.org/valueflows#AgentRelationshipRole",
     "baseIri" : "https://w3id.org/valueflows",
@@ -399,7 +463,7 @@
       "undefined" : "A relationship role defining the kind of association one agent can have with another."
     },
     "attributes" : [ "external" ],
-    "id" : "51",
+    "id" : "54",
     "superClasses" : [ "49" ]
   }, {
     "iri" : "https://w3id.org/valueflows#Action",
@@ -505,7 +569,7 @@
       "undefined" : "An action verb defining the kind of event, commitment, or intent."
     },
     "attributes" : [ "external" ],
-    "id" : "42",
+    "id" : "48",
     "superClasses" : [ "49" ]
   }, {
     "iri" : "http://qudt.org/schema/qudt/QuantityValue",
@@ -515,7 +579,7 @@
       "IRI-based" : "QuantityValue"
     },
     "attributes" : [ "external" ],
-    "id" : "45"
+    "id" : "59"
   }, {
     "iri" : "https://w3id.org/valueflows#ProcessClassification",
     "baseIri" : "https://w3id.org/valueflows",
@@ -528,7 +592,7 @@
       "undefined" : "A process category, model, taxonomy item, tag, facet value, or other kind of classification."
     },
     "attributes" : [ "external" ],
-    "id" : "67"
+    "id" : "72"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
@@ -536,7 +600,7 @@
     "label" : {
       "IRI-based" : "Property"
     },
-    "subClasses" : [ "42", "51" ],
+    "subClasses" : [ "48", "54" ],
     "attributes" : [ "external" ],
     "id" : "49"
   } ],
@@ -556,106 +620,85 @@
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
+    "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "16",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
     "id" : "21",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "23",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "25",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "31",
+    "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "33",
+    "id" : "35",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "36",
+    "id" : "37",
     "type" : "owl:objectProperty"
   }, {
     "id" : "38",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "39",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "40",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "43",
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "48",
+    "id" : "47",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "50",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "52",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "53",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "54",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "56",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "57",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
     "id" : "60",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "62",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "63",
     "type" : "owl:objectProperty"
   }, {
     "id" : "64",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "65",
+    "id" : "66",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "66",
+    "id" : "67",
     "type" : "owl:objectProperty"
   }, {
     "id" : "68",
@@ -670,9 +713,6 @@
     "id" : "71",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "73",
     "type" : "owl:objectProperty"
   }, {
@@ -680,6 +720,18 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -694,33 +746,33 @@
     "comment" : {
       "undefined" : "An informal or formal textual identifier for an object. Does not imply uniqueness."
     },
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "2"
-  }, {
-    "iri" : "https://w3id.org/valueflows#start",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "start",
-      "undefined" : "start"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The starting date and optionally time of the economic event."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "5"
   }, {
     "iri" : "https://w3id.org/valueflows#relationship",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "10",
+    "range" : "7",
     "label" : {
       "IRI-based" : "relationship",
       "undefined" : "relationship"
     },
-    "domain" : "9",
+    "domain" : "6",
     "comment" : {
       "undefined" : "A kind of relationship that exists between 2 agents."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/valueflows#start",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "start",
+      "undefined" : "start"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "The starting date and optionally time of the economic event."
     },
     "attributes" : [ "external", "object" ],
     "id" : "8"
@@ -730,191 +782,216 @@
     "range" : "13",
     "label" : {
       "IRI-based" : "resourceClassifiedAs",
-      "undefined" : "resource classified by"
+      "undefined" : "resource classified as"
     },
     "domain" : "12",
     "comment" : {
-      "undefined" : "Relates a resource to its primary classification, as part of describing that resource."
+      "undefined" : "A resource's primary classification, as part of describing that resource."
     },
     "attributes" : [ "external", "object" ],
     "id" : "11"
   }, {
     "iri" : "https://w3id.org/valueflows#scope",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "7",
+    "range" : "16",
     "label" : {
       "IRI-based" : "scope",
       "undefined" : "scope"
     },
-    "domain" : "6",
+    "domain" : "15",
     "comment" : {
-      "undefined" : "The larger boundary or context of an economic event, used for accounting, planning, distributing income."
+      "undefined" : "The larger boundary or context, used for accounting, planning, distributing income."
     },
     "attributes" : [ "external", "object" ],
     "id" : "14"
   }, {
-    "iri" : "https://w3id.org/valueflows#duration",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "duration",
-      "undefined" : "duration"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The observed duration of the economic event."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "15"
-  }, {
     "iri" : "https://w3id.org/valueflows#primaryLocation",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "18",
+    "range" : "19",
     "label" : {
       "IRI-based" : "primaryLocation",
       "undefined" : "primary location"
     },
-    "domain" : "17",
+    "domain" : "18",
     "comment" : {
       "undefined" : "The main place an agent is located, often an address where activities occur and mail can be sent. This is usually a mappable geographic location.  It also could be a website address, as in the case of agents who have no physical location."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "16"
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/valueflows#duration",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "duration",
+      "undefined" : "duration"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "The observed duration of the economic event."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/valueflows#inExchangeFor",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "inExchangeFor",
       "undefined" : "in exchange for"
     },
-    "domain" : "20",
+    "domain" : "22",
     "comment" : {
       "undefined" : "References the economic event that generated the commitment, in cases where based on an agreement, an agent commits to some reciprocity if an event occurs."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "19"
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/valueflows#affects",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "12",
+    "range" : "24",
     "label" : {
       "IRI-based" : "affects",
       "undefined" : "affects"
     },
-    "domain" : "6",
+    "domain" : "9",
     "comment" : {
       "undefined" : "The economic resource that is decremented or incremented by the economic event, or just what the economic event is about."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "21"
+    "id" : "23"
   }, {
     "iri" : "https://w3id.org/valueflows#involves",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "12",
+    "range" : "24",
     "label" : {
       "IRI-based" : "involves",
       "undefined" : "involves"
     },
-    "domain" : "20",
+    "domain" : "22",
     "comment" : {
       "undefined" : "EconomicResource the Commitment intends or commits to affect. Could be an actual resource or a category or type of resource."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "22"
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/valueflows#image",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "24",
+    "range" : "27",
     "label" : {
       "IRI-based" : "image",
       "undefined" : "image"
     },
     "domain" : "3",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "23"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
   }, {
     "iri" : "https://w3id.org/valueflows#contains",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "12",
+    "range" : "24",
     "label" : {
       "IRI-based" : "contains",
       "undefined" : "contains"
     },
-    "domain" : "12",
+    "domain" : "24",
     "comment" : {
       "undefined" : "Used when a stock economic resource contains units also defined as economic resources."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "25"
+    "id" : "28"
   }, {
     "iri" : "https://w3id.org/valueflows#provider",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
+    "range" : "18",
     "label" : {
       "IRI-based" : "provider",
       "undefined" : "provider"
     },
-    "domain" : "6",
+    "domain" : "30",
     "comment" : {
-      "undefined" : "The economic agent from whom the economic event is initiated."
+      "undefined" : "The economic agent from whom the intended, committed, or actual economic event is initiated."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "26"
+    "id" : "29"
   }, {
     "iri" : "https://w3id.org/valueflows#note",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "29",
+    "range" : "33",
     "label" : {
       "IRI-based" : "note",
       "undefined" : "note"
     },
-    "domain" : "32",
+    "domain" : "36",
     "comment" : {
       "undefined" : "A textual comment or description."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "31"
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/valueflows#object",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
+    "range" : "18",
     "label" : {
       "IRI-based" : "object",
       "undefined" : "object"
     },
-    "domain" : "9",
+    "domain" : "6",
     "comment" : {
       "undefined" : "The object of a relationship between 2 agents."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "33"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedOutputOf",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "35",
-    "label" : {
-      "IRI-based" : "committedOutputOf",
-      "undefined" : "committed output of"
-    },
-    "domain" : "20",
-    "attributes" : [ "external", "object" ],
-    "id" : "34"
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/valueflows#inputOf",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "35",
+    "range" : "40",
     "label" : {
       "IRI-based" : "inputOf",
       "undefined" : "input of"
     },
-    "domain" : "6",
+    "domain" : "39",
     "attributes" : [ "external", "object" ],
-    "id" : "36"
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/valueflows#outputs",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "outputs",
+      "undefined" : "outputs"
+    },
+    "domain" : "40",
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/valueflows#committedOutputs",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "committedOutputs",
+      "undefined" : "committed outputs"
+    },
+    "domain" : "40",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/valueflows#underlyingResource",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "underlyingResource",
+      "undefined" : "underlying resource"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "A more concrete resource upon which a resource is based."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
   }, {
     "iri" : "https://w3id.org/valueflows#exchangeClassifiedAs",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "37",
+    "range" : "43",
     "label" : {
       "IRI-based" : "exchangeClassifiedAs",
       "undefined" : "exchange classified by"
@@ -924,200 +1001,127 @@
       "undefined" : "The primary classification that describes an exchange agreement, at any level of granularity."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "38"
+    "id" : "45"
   }, {
-    "iri" : "https://w3id.org/valueflows#underlyingResource",
+    "iri" : "https://w3id.org/valueflows#committedInputs",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "12",
+    "range" : "22",
     "label" : {
-      "IRI-based" : "underlyingResource",
-      "undefined" : "underlying resource"
+      "IRI-based" : "committedInputs",
+      "undefined" : "committed inputs"
     },
-    "domain" : "12",
-    "comment" : {
-      "undefined" : "A more concrete resource upon which a resource is based."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "39"
-  }, {
-    "iri" : "https://w3id.org/valueflows#receiver",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "receiver",
-      "undefined" : "receiver"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "The economic agent whom the economic event is for."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "40"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedAction",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "committedAction",
-      "undefined" : "committed action"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "41"
-  }, {
-    "iri" : "https://w3id.org/valueflows#fulfilledQuantity",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "fulfilledQuantity",
-      "undefined" : "fulfilled quantity"
-    },
-    "domain" : "44",
-    "comment" : {
-      "undefined" : "The quantity of the fulfillment of an event towards a commitment."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "43"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedScope",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "committedScope",
-      "undefined" : "scope"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "The larger boundary or context of a commitment, used for accounting, planning."
-    },
+    "domain" : "40",
     "attributes" : [ "external", "object" ],
     "id" : "46"
   }, {
     "range" : "49",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/valueflows#receiver",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "receiver",
+      "undefined" : "receiver"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "The economic agent whom the intended, committed, or actual economic event is for."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "18",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
   }, {
     "range" : "49",
-    "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "50"
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "18",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://w3id.org/valueflows#fulfilledQuantity",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "fulfilledQuantity",
+      "undefined" : "fulfilled quantity"
+    },
+    "domain" : "58",
+    "comment" : {
+      "undefined" : "The quantity of the fulfillment of an event towards a commitment."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
   }, {
     "iri" : "https://w3id.org/valueflows#affectedQuantity",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "45",
+    "range" : "59",
     "label" : {
       "IRI-based" : "affectedQuantity",
       "undefined" : "affected quantity"
     },
-    "domain" : "6",
+    "domain" : "9",
     "comment" : {
       "undefined" : "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "52"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedUnder",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "1",
-    "label" : {
-      "IRI-based" : "committedUnder",
-      "undefined" : "committed under"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "Reference an agreement between agents which specifies the rules or policies which govern this commitment."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "53"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedResourceClassifiedAs",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "committedResourceClassifiedAs",
-      "undefined" : "committed resource classified by"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "The primary classification that describes a resource committed, at any level of granularity."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "54"
-  }, {
-    "range" : "1",
-    "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
-    "range" : "17",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "17",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedReceiver",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "committedReceiver",
-      "undefined" : "committed receiver"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "The economic agent whom a future economic event is committed to."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "59"
+    "id" : "61"
   }, {
     "iri" : "https://w3id.org/valueflows#subject",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
+    "range" : "18",
     "label" : {
       "IRI-based" : "subject",
       "undefined" : "subject"
     },
-    "domain" : "9",
+    "domain" : "6",
     "comment" : {
       "undefined" : "The subject of a relationship between 2 agents."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "60"
+    "id" : "64"
   }, {
     "iri" : "https://w3id.org/valueflows#appreciationOf",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "appreciationOf",
       "undefined" : "appreciation of"
     },
-    "domain" : "30",
+    "domain" : "34",
     "comment" : {
       "undefined" : "The economic event being appreciated (gift economy)."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "61"
+    "id" : "66"
   }, {
     "iri" : "https://w3id.org/valueflows#context",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
+    "range" : "18",
     "label" : {
       "IRI-based" : "context",
       "undefined" : "context"
     },
-    "domain" : "9",
+    "domain" : "6",
     "comment" : {
       "undefined" : "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "62"
+    "id" : "67"
   }, {
     "iri" : "https://w3id.org/valueflows#under",
     "baseIri" : "https://w3id.org/valueflows",
@@ -1126,146 +1130,132 @@
       "IRI-based" : "under",
       "undefined" : "under"
     },
-    "domain" : "6",
+    "domain" : "63",
     "comment" : {
       "undefined" : "Reference an agreement between agents which specifies the rules or policies which govern this event."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "63"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedProvider",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "committedProvider",
-      "undefined" : "committed provider"
-    },
-    "domain" : "20",
-    "comment" : {
-      "undefined" : "The economic agent who commits to a future economic event."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "64"
+    "id" : "68"
   }, {
     "iri" : "https://w3id.org/valueflows#fulfilledBy",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "fulfilledBy",
       "undefined" : "fulfilled by"
     },
-    "domain" : "44",
+    "domain" : "58",
     "comment" : {
       "undefined" : "The economic event which completely or partially fulfills a commitment."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "65"
+    "id" : "69"
+  }, {
+    "iri" : "https://w3id.org/valueflows#inputs",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "inputs",
+      "undefined" : "inputs"
+    },
+    "domain" : "40",
+    "attributes" : [ "external", "object" ],
+    "id" : "70"
   }, {
     "iri" : "https://w3id.org/valueflows#processClassifiedAs",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "67",
+    "range" : "72",
     "label" : {
       "IRI-based" : "processClassifiedAs",
       "undefined" : "process classified by"
     },
-    "domain" : "35",
+    "domain" : "40",
     "comment" : {
       "undefined" : "The primary classification that describes a process, at any level of granularity."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "66"
-  }, {
-    "iri" : "https://w3id.org/valueflows#committedInputOf",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "35",
-    "label" : {
-      "IRI-based" : "committedInputOf",
-      "undefined" : "committed input of"
-    },
-    "domain" : "20",
-    "attributes" : [ "external", "object" ],
-    "id" : "68"
+    "id" : "71"
   }, {
     "iri" : "https://w3id.org/valueflows#action",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "42",
+    "range" : "48",
     "label" : {
       "IRI-based" : "action",
       "undefined" : "action"
     },
-    "domain" : "6",
+    "domain" : "65",
     "comment" : {
-      "undefined" : "Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "69"
-  }, {
-    "iri" : "https://w3id.org/valueflows#fulfills",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "fulfills",
-      "undefined" : "fulfills"
-    },
-    "domain" : "44",
-    "comment" : {
-      "undefined" : "The commitment which is completely or partially fulfilled by an economic event."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "70"
-  }, {
-    "iri" : "https://w3id.org/valueflows#outputOf",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "35",
-    "label" : {
-      "IRI-based" : "outputOf",
-      "undefined" : "output of"
-    },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
-    "id" : "71"
-  }, {
-    "iri" : "https://w3id.org/valueflows#appreciationWith",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "appreciationWith",
-      "undefined" : "appreciation with"
-    },
-    "domain" : "30",
-    "comment" : {
-      "undefined" : "The economic event implemented in appreciation (gift economy)."
-    },
-    "attributes" : [ "external", "object" ],
-    "id" : "72"
-  }, {
-    "iri" : "https://w3id.org/valueflows#quantity",
-    "baseIri" : "https://w3id.org/valueflows",
-    "range" : "45",
-    "label" : {
-      "IRI-based" : "quantity",
-      "undefined" : "quantity"
-    },
-    "domain" : "12",
-    "comment" : {
-      "undefined" : "The current amount and unit of the economic resource."
+      "undefined" : "Relates a process input or output to a verb, such as consume, produce, work, improve, etc."
     },
     "attributes" : [ "external", "object" ],
     "id" : "73"
   }, {
+    "iri" : "https://w3id.org/valueflows#fulfills",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "fulfills",
+      "undefined" : "fulfills"
+    },
+    "domain" : "58",
+    "comment" : {
+      "undefined" : "The commitment which is completely or partially fulfilled by an economic event."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/valueflows#outputOf",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "outputOf",
+      "undefined" : "output of"
+    },
+    "domain" : "62",
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/valueflows#appreciationWith",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "appreciationWith",
+      "undefined" : "appreciation with"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "The economic event implemented in appreciation (gift economy)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/valueflows#quantity",
+    "baseIri" : "https://w3id.org/valueflows",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "quantity",
+      "undefined" : "quantity"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "The current amount and unit of the economic resource."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "77"
+  }, {
     "iri" : "https://w3id.org/valueflows#currentLocation",
     "baseIri" : "https://w3id.org/valueflows",
-    "range" : "18",
+    "range" : "19",
     "label" : {
       "IRI-based" : "currentLocation",
       "undefined" : "current location"
     },
-    "domain" : "12",
+    "domain" : "24",
     "comment" : {
       "undefined" : "The current place an economic resource is located.  Could be at any level of granularity, from a town to an address to a warehouse location.  Should be mappable."
     },
     "attributes" : [ "external", "object" ],
-    "id" : "74"
+    "id" : "78"
   }, {
     "iri" : "https://w3id.org/valueflows#url",
     "baseIri" : "https://w3id.org/valueflows",
@@ -1275,7 +1265,7 @@
       "undefined" : "url"
     },
     "domain" : "3",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "75"
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
   } ]
 }

@@ -1,5 +1,45 @@
 {
   "@graph" : [ {
+    "@id" : "_:b10",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b16",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b18",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b19",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b2",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b5",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b8",
+    "unionOf" : {
+      "@list" : [ "vf:Commitment", "vf:EconomicResource" ]
+    }
+  }, {
+    "@id" : "_:b9",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
     "@id" : "org:Organization",
     "@type" : "owl:Class",
     "comment" : "Usually a more formally defined structure than Group, often legally defined, can be a group or not.",
@@ -100,8 +140,8 @@
   }, {
     "@id" : "vf:action",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.",
-    "domain" : "vf:EconomicEvent",
+    "comment" : "Relates a process input or output to a verb, such as consume, produce, work, improve, etc.",
+    "domain" : "_:b19",
     "label" : "action",
     "range" : "vf:Action"
   }, {
@@ -137,59 +177,17 @@
     "@type" : "vf:Action",
     "label" : "cite"
   }, {
-    "@id" : "vf:committedAction",
+    "@id" : "vf:committedInputs",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Relates a process input or output (or other vf:EconomicEVent) to a verb, such as consume, produce, work, improve, etc.",
-    "domain" : "vf:Commitment",
-    "label" : "committed action",
-    "range" : "vf:Action"
+    "domain" : "vf:Process",
+    "label" : "committed inputs",
+    "range" : "vf:Commitment"
   }, {
-    "@id" : "vf:committedInputOf",
+    "@id" : "vf:committedOutputs",
     "@type" : "owl:ObjectProperty",
-    "domain" : "vf:Commitment",
-    "label" : "committed input of",
-    "range" : "vf:Process"
-  }, {
-    "@id" : "vf:committedOutputOf",
-    "@type" : "owl:ObjectProperty",
-    "domain" : "vf:Commitment",
-    "label" : "committed output of",
-    "range" : "vf:Process"
-  }, {
-    "@id" : "vf:committedProvider",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The economic agent who commits to a future economic event.",
-    "domain" : "vf:Commitment",
-    "label" : "committed provider",
-    "range" : "foaf:Agent"
-  }, {
-    "@id" : "vf:committedReceiver",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The economic agent whom a future economic event is committed to.",
-    "domain" : "vf:Commitment",
-    "label" : "committed receiver",
-    "range" : "foaf:Agent"
-  }, {
-    "@id" : "vf:committedResourceClassifiedAs",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The primary classification that describes a resource committed, at any level of granularity.",
-    "domain" : "vf:Commitment",
-    "label" : "committed resource classified by",
-    "range" : "vf:ResourceClassification"
-  }, {
-    "@id" : "vf:committedScope",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The larger boundary or context of a commitment, used for accounting, planning.",
-    "domain" : "vf:Commitment",
-    "label" : "scope",
-    "range" : "owl:Thing"
-  }, {
-    "@id" : "vf:committedUnder",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "Reference an agreement between agents which specifies the rules or policies which govern this commitment.",
-    "domain" : "vf:Commitment",
-    "label" : "committed under",
-    "range" : "vf:Agreement"
+    "domain" : "vf:Process",
+    "label" : "committed outputs",
+    "range" : "vf:Commitment"
   }, {
     "@id" : "vf:consume",
     "@type" : "vf:Action",
@@ -276,9 +274,15 @@
   }, {
     "@id" : "vf:inputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "vf:EconomicEvent",
+    "domain" : "_:b18",
     "label" : "input of",
     "range" : "vf:Process"
+  }, {
+    "@id" : "vf:inputs",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "vf:Process",
+    "label" : "inputs",
+    "range" : "vf:EconomicEvent"
   }, {
     "@id" : "vf:involves",
     "@type" : "owl:ObjectProperty",
@@ -317,9 +321,15 @@
   }, {
     "@id" : "vf:outputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "vf:EconomicEvent",
+    "domain" : "_:b5",
     "label" : "output of",
     "range" : "vf:Process"
+  }, {
+    "@id" : "vf:outputs",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "vf:Process",
+    "label" : "outputs",
+    "range" : "vf:EconomicEvent"
   }, {
     "@id" : "vf:primaryLocation",
     "@type" : "owl:ObjectProperty",
@@ -342,8 +352,8 @@
   }, {
     "@id" : "vf:provider",
     "@type" : "owl:ObjectProperty",
-    "comment" : "The economic agent from whom the economic event is initiated.",
-    "domain" : "vf:EconomicEvent",
+    "comment" : "The economic agent from whom the intended, committed, or actual economic event is initiated.",
+    "domain" : "_:b9",
     "label" : "provider",
     "range" : "foaf:Agent"
   }, {
@@ -361,8 +371,8 @@
   }, {
     "@id" : "vf:receiver",
     "@type" : "owl:ObjectProperty",
-    "comment" : "The economic agent whom the economic event is for.",
-    "domain" : "vf:EconomicEvent",
+    "comment" : "The economic agent whom the intended, committed, or actual economic event is for.",
+    "domain" : "_:b10",
     "label" : "receiver",
     "range" : "foaf:Agent"
   }, {
@@ -375,15 +385,15 @@
   }, {
     "@id" : "vf:resourceClassifiedAs",
     "@type" : "owl:ObjectProperty",
-    "comment" : "Relates a resource to its primary classification, as part of describing that resource.",
-    "domain" : "vf:EconomicResource",
-    "label" : "resource classified by",
+    "comment" : "A resource's primary classification, as part of describing that resource.",
+    "domain" : "_:b8",
+    "label" : "resource classified as",
     "range" : "vf:ResourceClassification"
   }, {
     "@id" : "vf:scope",
     "@type" : "owl:ObjectProperty",
-    "comment" : "The larger boundary or context of an economic event, used for accounting, planning, distributing income.",
-    "domain" : "vf:EconomicEvent",
+    "comment" : "The larger boundary or context, used for accounting, planning, distributing income.",
+    "domain" : "_:b16",
     "label" : "scope",
     "range" : "owl:Thing"
   }, {
@@ -409,7 +419,7 @@
     "@id" : "vf:under",
     "@type" : "owl:ObjectProperty",
     "comment" : "Reference an agreement between agents which specifies the rules or policies which govern this event.",
-    "domain" : "vf:EconomicEvent",
+    "domain" : "_:b2",
     "label" : "under",
     "range" : "vf:Agreement"
   }, {
@@ -446,6 +456,18 @@
   "@context" : {
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
     },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
