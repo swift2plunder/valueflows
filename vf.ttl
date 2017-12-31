@@ -54,9 +54,6 @@ vf:underlyingResource
 vf:increment  a     vf:Action ;
         rdfs:label  "increment" .
 
-vf:accept  a        vf:Action ;
-        rdfs:label  "accept" .
-
 vf:context  a         owl:ObjectProperty ;
         rdfs:comment  "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context." ;
         rdfs:domain   vf:AgentRelationship ;
@@ -68,6 +65,9 @@ vf:context  a         owl:ObjectProperty ;
         dcterms:status  <http://purl.org/adms/status/UnderDevelopment> ;
         dcterms:title   "Value Flows Ontology" ;
         dcterms:type    <http://purl.org/adms/assettype/Ontology> .
+
+vf:accept  a        vf:Action ;
+        rdfs:label  "accept" .
 
 vf:start  a           owl:ObjectProperty ;
         rdfs:comment  "The starting date and optionally time of the economic event." ;
@@ -162,12 +162,6 @@ vf:produce  a               vf:Action ;
         rdfs:label          "produce" ;
         rdfs:subPropertyOf  vf:increment .
 
-vf:inExchangeFor  a   owl:ObjectProperty ;
-        rdfs:comment  "References the economic event that generated the commitment, in cases where based on an agreement, an agent commits to some reciprocity if an event occurs." ;
-        rdfs:domain   vf:Commitment ;
-        rdfs:label    "in exchange for" ;
-        rdfs:range    vf:EconomicEvent .
-
 vf:contains  a        owl:ObjectProperty ;
         rdfs:comment  "Used when a stock economic resource contains units also defined as economic resources." ;
         rdfs:domain   vf:EconomicResource ;
@@ -254,6 +248,18 @@ vf:affectedQuantity  a  owl:ObjectProperty ;
         rdfs:label    "affected quantity" ;
         rdfs:range    qudt:QuantityValue .
 
+vf:DistributionAgreement
+        a                owl:Class ;
+        rdfs:comment     "An agreement to distribute some resource in exchange for inputs or outputs created by other agents." ;
+        rdfs:label       "vf:DistributionAgreement" ;
+        rdfs:subClassOf  vf:Agreement .
+
+vf:createdBy  a       owl:ObjectProperty ;
+        rdfs:comment  "References the economic event that fully or partially created the commitment, often based on a prior agreement." ;
+        rdfs:domain   vf:Reciprocity ;
+        rdfs:label    "created by" ;
+        rdfs:range    vf:EconomicEvent .
+
 vf:improve  a       vf:Action ;
         rdfs:label  "improve" .
 
@@ -262,6 +268,12 @@ vf:action  a          owl:ObjectProperty ;
         rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
         rdfs:label    "action" ;
         rdfs:range    vf:Action .
+
+vf:creates  a         owl:ObjectProperty ;
+        rdfs:comment  "References the commitment that was fully or partially created because of the economic event, often based on a prior agreement." ;
+        rdfs:domain   vf:Reciprocity ;
+        rdfs:label    "creates" ;
+        rdfs:range    vf:Commitment .
 
 vf:Fulfillment  a     owl:Class ;
         rdfs:comment  "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment." ;
@@ -274,6 +286,10 @@ vf:committedInputs  a  owl:ObjectProperty ;
 
 vf:url  a           owl:DatatypeProperty ;
         rdfs:label  "url" .
+
+vf:Reciprocity  a     owl:Class ;
+        rdfs:comment  "The quantity that the vf:EconomicEvent implies towards creation of the reciprocal vf:Commitment." ;
+        rdfs:label    "vf:Reciprocity" .
 
 vf:receive  a               vf:Action ;
         rdfs:label          "receive" ;
@@ -338,7 +354,7 @@ vf:unload  a                vf:Action ;
 
 vf:under  a           owl:ObjectProperty ;
         rdfs:comment  "Reference an agreement between agents which specifies the rules or policies which govern this event." ;
-        rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
+        rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment vf:Reciprocity vf:Fulfillment ) ] ;
         rdfs:label    "under" ;
         rdfs:range    vf:Agreement .
 
