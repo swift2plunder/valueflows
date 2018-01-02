@@ -1,31 +1,36 @@
 {
   "@graph" : [ {
-    "@id" : "_:b13",
+    "@id" : "_:b14",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b16",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
     "@id" : "_:b18",
     "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:Reciprocity", "vf:Fulfillment" ]
     }
   }, {
     "@id" : "_:b19",
     "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:AgentRelationship" ]
     }
   }, {
-    "@id" : "_:b24",
+    "@id" : "_:b2",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b3",
+    "@id" : "_:b25",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b4",
+    "@id" : "_:b6",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
@@ -33,11 +38,6 @@
     "@id" : "_:b7",
     "unionOf" : {
       "@list" : [ "vf:Commitment", "vf:EconomicResource" ]
-    }
-  }, {
-    "@id" : "_:b8",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:Reciprocity", "vf:Fulfillment" ]
     }
   }, {
     "@id" : "org:Organization",
@@ -152,7 +152,7 @@
     "@id" : "vf:action",
     "@type" : "owl:ObjectProperty",
     "comment" : "Relates a process input or output to a verb, such as consume, produce, work, improve, etc.",
-    "domain" : "_:b24",
+    "domain" : "_:b25",
     "label" : "action",
     "range" : "vf:Action"
   }, {
@@ -212,13 +212,6 @@
     "label" : "contains",
     "range" : "vf:EconomicResource"
   }, {
-    "@id" : "vf:context",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context.",
-    "domain" : "vf:AgentRelationship",
-    "label" : "context",
-    "range" : "foaf:Agent"
-  }, {
     "@id" : "vf:createdBy",
     "@type" : "owl:ObjectProperty",
     "comment" : "References the economic event that fully or partially created the commitment, often based on a prior agreement.",
@@ -239,6 +232,13 @@
     "domain" : "vf:EconomicResource",
     "label" : "current location",
     "range" : "vf:Location"
+  }, {
+    "@id" : "vf:currentQuantity",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The current amount and unit of the economic resource.",
+    "domain" : "vf:EconomicResource",
+    "label" : "current quantity",
+    "range" : "qudt:QuantityValue"
   }, {
     "@id" : "vf:decrement",
     "@type" : "vf:Action",
@@ -292,7 +292,7 @@
   }, {
     "@id" : "vf:inputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b13",
+    "domain" : "_:b16",
     "label" : "input of",
     "range" : "vf:Process"
   }, {
@@ -339,7 +339,7 @@
   }, {
     "@id" : "vf:outputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b3",
+    "domain" : "_:b6",
     "label" : "output of",
     "range" : "vf:Process"
   }, {
@@ -348,6 +348,18 @@
     "domain" : "vf:Process",
     "label" : "outputs",
     "range" : "vf:EconomicEvent"
+  }, {
+    "@id" : "vf:plannedDuration",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The planned or estimated duration of the process.",
+    "domain" : "vf:Process",
+    "label" : "planned duration"
+  }, {
+    "@id" : "vf:plannedStart",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "The planned or estimated date and optionally time of the process.",
+    "domain" : "vf:Process",
+    "label" : "planned start"
   }, {
     "@id" : "vf:primaryLocation",
     "@type" : "owl:ObjectProperty",
@@ -371,16 +383,9 @@
     "@id" : "vf:provider",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent from whom the intended, committed, or actual economic event is initiated.",
-    "domain" : "_:b19",
+    "domain" : "_:b2",
     "label" : "provider",
     "range" : "foaf:Agent"
-  }, {
-    "@id" : "vf:quantity",
-    "@type" : "owl:ObjectProperty",
-    "comment" : "The current amount and unit of the economic resource.",
-    "domain" : "vf:EconomicResource",
-    "label" : "quantity",
-    "range" : "qudt:QuantityValue"
   }, {
     "@id" : "vf:receive",
     "@type" : "vf:Action",
@@ -390,7 +395,7 @@
     "@id" : "vf:receiver",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent whom the intended, committed, or actual economic event is for.",
-    "domain" : "_:b18",
+    "domain" : "_:b14",
     "label" : "receiver",
     "range" : "foaf:Agent"
   }, {
@@ -410,8 +415,8 @@
   }, {
     "@id" : "vf:scope",
     "@type" : "owl:ObjectProperty",
-    "comment" : "The larger boundary or context, used for accounting, planning, distributing income.",
-    "domain" : "_:b4",
+    "comment" : "The larger boundary or context, used for documenting, accounting, planning, distributing income.",
+    "domain" : "_:b19",
     "label" : "scope",
     "range" : "owl:Thing"
   }, {
@@ -437,7 +442,7 @@
     "@id" : "vf:under",
     "@type" : "owl:ObjectProperty",
     "comment" : "Reference an agreement between agents which specifies the rules or policies which govern this event.",
-    "domain" : "_:b8",
+    "domain" : "_:b18",
     "label" : "under",
     "range" : "vf:Agreement"
   }, {
@@ -472,6 +477,9 @@
     "type" : "http://purl.org/adms/assettype/Ontology"
   } ],
   "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
     "rest" : {
       "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
       "@type" : "@id"
@@ -480,8 +488,9 @@
       "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
       "@type" : "@id"
     },
-    "label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
     },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
@@ -493,10 +502,6 @@
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
-    },
-    "unionOf" : {
-      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
-      "@type" : "@id"
     },
     "subPropertyOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",

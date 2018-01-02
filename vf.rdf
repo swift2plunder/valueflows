@@ -104,6 +104,11 @@
     <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
     <rdfs:label>org:Organization</rdfs:label>
   </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#plannedDuration">
+    <rdfs:comment>The planned or estimated duration of the process.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>planned duration</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#committedInputs">
     <rdfs:range rdf:resource="https://w3id.org/valueflows#Commitment"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
@@ -113,6 +118,12 @@
     <rdfs:comment>The starting date and optionally time of the economic event.</rdfs:comment>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:label>start</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#currentQuantity">
+    <rdfs:comment>The current amount and unit of the economic resource.</rdfs:comment>
+    <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
+    <rdfs:label>current quantity</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#involves">
     <rdfs:comment>EconomicResource the Commitment intends or commits to affect. Could be an actual resource or a category or type of resource.</rdfs:comment>
@@ -200,12 +211,6 @@
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:label>duration</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#context">
-    <rdfs:comment>The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context.</rdfs:comment>
-    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/#Agent"/>
-    <rdfs:label>context</rdfs:label>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#AgentRelationship"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#outputs">
     <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
@@ -222,13 +227,14 @@
     <rdfs:label>output of</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#scope">
-    <rdfs:comment>The larger boundary or context, used for accounting, planning, distributing income.</rdfs:comment>
+    <rdfs:comment>The larger boundary or context, used for documenting, accounting, planning, distributing income.</rdfs:comment>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:label>scope</rdfs:label>
     <rdfs:domain rdf:parseType="Resource">
       <owl:unionOf rdf:parseType="Collection">
         <owl:Class rdf:about="https://w3id.org/valueflows#EconomicEvent"/>
         <owl:Class rdf:about="https://w3id.org/valueflows#Commitment"/>
+        <owl:Class rdf:about="https://w3id.org/valueflows#AgentRelationship"/>
       </owl:unionOf>
     </rdfs:domain>
   </owl:ObjectProperty>
@@ -236,12 +242,6 @@
     <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
     <rdfs:label>inputs</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#quantity">
-    <rdfs:comment>The current amount and unit of the economic resource.</rdfs:comment>
-    <rdfs:range rdf:resource="http://qudt.org/schema/qudt/QuantityValue"/>
-    <rdfs:domain rdf:resource="https://w3id.org/valueflows#EconomicResource"/>
-    <rdfs:label>quantity</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#affects">
     <rdfs:comment>The economic resource that is decremented or incremented by the economic event, or just what the economic event is about.</rdfs:comment>
@@ -322,6 +322,11 @@
     <rdfs:range rdf:resource="https://w3id.org/valueflows#EconomicEvent"/>
     <rdfs:domain rdf:resource="https://w3id.org/valueflows#Appreciation"/>
     <rdfs:label>appreciation of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#plannedStart">
+    <rdfs:comment>The planned or estimated date and optionally time of the process.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/valueflows#Process"/>
+    <rdfs:label>planned start</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="https://w3id.org/valueflows#currentLocation">
     <rdfs:comment>The current place an economic resource is located.  Could be at any level of granularity, from a town to an address to a warehouse location.  Should be mappable.</rdfs:comment>

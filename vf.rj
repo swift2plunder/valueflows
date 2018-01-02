@@ -22,23 +22,10 @@
      ]
   }
    ,
-  "_:45c095ee06b6470c510d820e55a8650a" : { 
+  "_:3e18a5508d5e91344dd8b878cce3ed8f" : { 
     "http://www.w3.org/2002/07/owl#unionOf" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff0"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7ff4" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff3"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
+      "value" : "_:-4a9dac32:160b8531e73:-7ff6"
     }
      ]
   }
@@ -52,14 +39,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "improve"
-    }
-     ]
-  }
-   ,
-  "_:482a941af785ee54f4a2e1c8b0f4c42d" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff2"
     }
      ]
   }
@@ -179,6 +158,19 @@
      ]
   }
    ,
+  "_:-4a9dac32:160b8531e73:-7ff5" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicResource"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#accept" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -205,7 +197,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:b0d03fa18425ee0376c7094e02628d3b"
+      "value" : "_:b695fc6efe49d8445132389f8f5808de"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -229,14 +221,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "decrement"
-    }
-     ]
-  }
-   ,
-  "_:aa9b0b0c7da7555039b1e3812dd03fda" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ffa"
     }
      ]
   }
@@ -292,15 +276,15 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7fec" : { 
+  "_:-4a9dac32:160b8531e73:-7fed" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7feb"
+      "value" : "_:-4a9dac32:160b8531e73:-7fec"
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Reciprocity"
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
     }
      ]
   }
@@ -359,19 +343,6 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff3" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#processClassifiedAs" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -396,6 +367,14 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#ProcessClassification"
+    }
+     ]
+  }
+   ,
+  "_:ae554172b33c2dca965e682866716d9b" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ffc"
     }
      ]
   }
@@ -441,6 +420,19 @@
      ]
   }
    ,
+  "_:-4a9dac32:160b8531e73:-7ff4" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff3"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#creates" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -482,7 +474,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:2874413f64421e378bf64880f7ec95d9"
+      "value" : "_:3e18a5508d5e91344dd8b878cce3ed8f"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -506,19 +498,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "increment"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7feb" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Fulfillment"
     }
      ]
   }
@@ -569,15 +548,23 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff2" : { 
+  "_:-4a9dac32:160b8531e73:-7fec" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff1"
+      "value" : "_:-4a9dac32:160b8531e73:-7feb"
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
+      "value" : "https://w3id.org/valueflows#Commitment"
+    }
+     ]
+  }
+   ,
+  "_:a835902a03415d9b1eb03f3f19046893" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff0"
     }
      ]
   }
@@ -601,6 +588,29 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#plannedDuration" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The planned or estimated duration of the process."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Process"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "planned duration"
     }
      ]
   }
@@ -646,19 +656,6 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff6" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff5"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#Fulfillment" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -673,6 +670,19 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:Fulfillment"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7ff7" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
     }
      ]
   }
@@ -708,7 +718,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:c12a2ba2e414d5bbaf34507e9e45ad13"
+      "value" : "_:edf48664e0b43564de33cb423316aa17"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -751,27 +761,6 @@
      ]
   }
    ,
-  "_:c12a2ba2e414d5bbaf34507e9e45ad13" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7fee"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7fee" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7fed"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#duration" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -791,6 +780,19 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "duration"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7fef" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7fee"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
     }
      ]
   }
@@ -831,18 +833,10 @@
      ]
   }
    ,
-  "_:2874413f64421e378bf64880f7ec95d9" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff6"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#scope" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
-      "value" : "The larger boundary or context, used for accounting, planning, distributing income."
+      "value" : "The larger boundary or context, used for documenting, accounting, planning, distributing income."
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
@@ -852,7 +846,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:45c095ee06b6470c510d820e55a8650a"
+      "value" : "_:a835902a03415d9b1eb03f3f19046893"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -863,34 +857,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2002/07/owl#Thing"
-    }
-     ]
-  }
-   ,
-  "https://w3id.org/valueflows#quantity" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The current amount and unit of the economic resource."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicResource"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "quantity"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://qudt.org/schema/qudt/QuantityValue"
     }
      ]
   }
@@ -909,19 +875,6 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:AgentRelationship"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7ff5" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicResource"
     }
      ]
   }
@@ -972,18 +925,15 @@
      ]
   }
    ,
-  "_:b0d03fa18425ee0376c7094e02628d3b" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+  "_:-4a9dac32:160b8531e73:-7ff6" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff4"
+      "value" : "_:-4a9dac32:160b8531e73:-7ff5"
     }
-     ]
-  }
-   ,
-  "_:1800f44b05606ba18ec5aabf6fc29c29" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff8"
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
     }
      ]
   }
@@ -1034,6 +984,37 @@
      ]
   }
    ,
+  "https://w3id.org/valueflows#plannedStart" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The planned or estimated date and optionally time of the process."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Process"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "planned start"
+    }
+     ]
+  }
+   ,
+  "_:edf48664e0b43564de33cb423316aa17" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7fed"
+    }
+     ]
+  }
+   ,
   "http://xmlns.com/foaf/0.1/#Person" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1075,19 +1056,6 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7fed" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7fec"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#affectedQuantity" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1116,15 +1084,36 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff8" : { 
+  "_:-4a9dac32:160b8531e73:-7fee" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff7"
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
+      "value" : "https://w3id.org/valueflows#AgentRelationship"
+    }
+     ]
+  }
+   ,
+  "_:bd9a1a38b05e335de9bf9b94ddd895cc" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff8"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7ff1" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
     }
      ]
   }
@@ -1152,6 +1141,19 @@
      ]
   }
    ,
+  "_:-4a9dac32:160b8531e73:-7ff9" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#load" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -1170,15 +1172,10 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ffa" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+  "_:a390ad3b3b1b7f43dd472d914bbf1688" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ff9"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
+      "value" : "_:-4a9dac32:160b8531e73:-7ffa"
     }
      ]
   }
@@ -1275,34 +1272,6 @@
      ]
   }
    ,
-  "https://w3id.org/valueflows#context" : { 
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
-      "type" : "literal" ,
-      "value" : "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context."
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#AgentRelationship"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
-      "type" : "literal" ,
-      "value" : "context"
-    }
-     ] ,
-    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
-      "type" : "uri" ,
-      "value" : "http://xmlns.com/foaf/0.1/#Agent"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#inputs" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -1326,7 +1295,7 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff7" : { 
+  "_:-4a9dac32:160b8531e73:-7ffb" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
@@ -1335,6 +1304,19 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#Commitment"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7ff0" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7fef"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
     }
      ]
   }
@@ -1375,7 +1357,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:482a941af785ee54f4a2e1c8b0f4c42d"
+      "value" : "_:60e2fd41457b638419501b626a446be8"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1418,6 +1400,19 @@
      ]
   }
    ,
+  "_:-4a9dac32:160b8531e73:-7ff8" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff7"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#use" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -1444,7 +1439,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:d9fdc7a1e81c69d6c8ca61547c4a45dd"
+      "value" : "_:ae554172b33c2dca965e682866716d9b"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1459,15 +1454,15 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7fef" : { 
+  "_:-4a9dac32:160b8531e73:-7ffa" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff9"
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
     }
      ]
   }
@@ -1564,14 +1559,6 @@
      ]
   }
    ,
-  "_:d9fdc7a1e81c69d6c8ca61547c4a45dd" : { 
-    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ffc"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#Commitment" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1586,6 +1573,42 @@
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
       "type" : "literal" ,
       "value" : "vf:Commitment"
+    }
+     ]
+  }
+   ,
+  "_:b695fc6efe49d8445132389f8f5808de" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff4"
+    }
+     ]
+  }
+   ,
+  "https://w3id.org/valueflows#currentQuantity" : { 
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
+      "type" : "literal" ,
+      "value" : "The current amount and unit of the economic resource."
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicResource"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
+      "type" : "literal" ,
+      "value" : "current quantity"
+    }
+     ] ,
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
+      "type" : "uri" ,
+      "value" : "http://qudt.org/schema/qudt/QuantityValue"
     }
      ]
   }
@@ -1654,6 +1677,19 @@
      ]
   }
    ,
+  "_:-4a9dac32:160b8531e73:-7ff3" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Commitment"
+    }
+     ]
+  }
+   ,
   "https://w3id.org/valueflows#inputOf" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -1662,7 +1698,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:aa9b0b0c7da7555039b1e3812dd03fda"
+      "value" : "_:a390ad3b3b1b7f43dd472d914bbf1688"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1673,19 +1709,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#Process"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7ffc" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7ffb"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#EconomicEvent"
     }
      ]
   }
@@ -1703,19 +1726,6 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff1" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#outputOf" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { 
       "type" : "uri" ,
@@ -1724,7 +1734,7 @@
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#domain" : [ { 
       "type" : "bnode" ,
-      "value" : "_:1800f44b05606ba18ec5aabf6fc29c29"
+      "value" : "_:bd9a1a38b05e335de9bf9b94ddd895cc"
     }
      ] ,
     "http://www.w3.org/2000/01/rdf-schema#label" : [ { 
@@ -1735,6 +1745,19 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#Process"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7feb" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7fea"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Reciprocity"
     }
      ]
   }
@@ -1767,19 +1790,6 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff9" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
-    }
-     ]
-  }
-   ,
   "https://w3id.org/valueflows#note" : { 
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ { 
       "type" : "literal" ,
@@ -1799,19 +1809,6 @@
     "http://www.w3.org/2000/01/rdf-schema#range" : [ { 
       "type" : "uri" ,
       "value" : "http://www.w3.org/2004/02/skos/core#note"
-    }
-     ]
-  }
-   ,
-  "_:6be1ad7b:160ae9b7d23:-7ffb" : { 
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
-      "type" : "uri" ,
-      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    }
-     ] ,
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
-      "type" : "uri" ,
-      "value" : "https://w3id.org/valueflows#Commitment"
     }
      ]
   }
@@ -1848,6 +1845,19 @@
     "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#decrement"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7ff2" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff1"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#EconomicEvent"
     }
      ]
   }
@@ -1921,15 +1931,36 @@
      ]
   }
    ,
-  "_:6be1ad7b:160ae9b7d23:-7ff0" : { 
+  "_:60e2fd41457b638419501b626a446be8" : { 
+    "http://www.w3.org/2002/07/owl#unionOf" : [ { 
+      "type" : "bnode" ,
+      "value" : "_:-4a9dac32:160b8531e73:-7ff2"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7ffc" : { 
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
       "type" : "bnode" ,
-      "value" : "_:6be1ad7b:160ae9b7d23:-7fef"
+      "value" : "_:-4a9dac32:160b8531e73:-7ffb"
     }
      ] ,
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
       "type" : "uri" ,
       "value" : "https://w3id.org/valueflows#EconomicEvent"
+    }
+     ]
+  }
+   ,
+  "_:-4a9dac32:160b8531e73:-7fea" : { 
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ { 
+      "type" : "uri" ,
+      "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+    }
+     ] ,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ { 
+      "type" : "uri" ,
+      "value" : "https://w3id.org/valueflows#Fulfillment"
     }
      ]
   }

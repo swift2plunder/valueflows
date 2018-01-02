@@ -35,6 +35,11 @@ vf:resourceClassifiedAs
         rdfs:label    "resource classified as" ;
         rdfs:range    vf:ResourceClassification .
 
+vf:plannedStart  a    owl:ObjectProperty ;
+        rdfs:comment  "The planned or estimated date and optionally time of the process." ;
+        rdfs:domain   vf:Process ;
+        rdfs:label    "planned start" .
+
 vf:load  a                  vf:Action ;
         rdfs:label          "load" ;
         rdfs:subPropertyOf  vf:decrement .
@@ -53,12 +58,6 @@ vf:underlyingResource
 
 vf:increment  a     vf:Action ;
         rdfs:label  "increment" .
-
-vf:context  a         owl:ObjectProperty ;
-        rdfs:comment  "The larger context of a relationship between 2 agents, used where the relationship is not relevant outside of that context." ;
-        rdfs:domain   vf:AgentRelationship ;
-        rdfs:label    "context" ;
-        rdfs:range    foaf:Agent .
 
 <https://w3id.org/valueflows/>
         a               owl:Ontology ;
@@ -219,12 +218,6 @@ vf:Commitment  a      owl:Class ;
 vf:cite  a          vf:Action ;
         rdfs:label  "cite" .
 
-vf:quantity  a        owl:ObjectProperty ;
-        rdfs:comment  "The current amount and unit of the economic resource." ;
-        rdfs:domain   vf:EconomicResource ;
-        rdfs:label    "quantity" ;
-        rdfs:range    qudt:QuantityValue .
-
 vf:exchangeClassifiedAs
         a             owl:ObjectProperty ;
         rdfs:comment  "The primary classification that describes an exchange agreement, at any level of granularity." ;
@@ -274,6 +267,11 @@ vf:creates  a         owl:ObjectProperty ;
         rdfs:domain   vf:Reciprocity ;
         rdfs:label    "creates" ;
         rdfs:range    vf:Commitment .
+
+vf:plannedDuration  a  owl:ObjectProperty ;
+        rdfs:comment  "The planned or estimated duration of the process." ;
+        rdfs:domain   vf:Process ;
+        rdfs:label    "planned duration" .
 
 vf:Fulfillment  a     owl:Class ;
         rdfs:comment  "The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment." ;
@@ -328,6 +326,12 @@ vf:involves  a        owl:ObjectProperty ;
         rdfs:label    "involves" ;
         rdfs:range    vf:EconomicResource .
 
+vf:currentQuantity  a  owl:ObjectProperty ;
+        rdfs:comment  "The current amount and unit of the economic resource." ;
+        rdfs:domain   vf:EconomicResource ;
+        rdfs:label    "current quantity" ;
+        rdfs:range    qudt:QuantityValue .
+
 vf:inputOf  a        owl:ObjectProperty ;
         rdfs:domain  [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
         rdfs:label   "input of" ;
@@ -338,8 +342,8 @@ vf:Appreciation  a    owl:Class ;
         rdfs:label    "vf:Appreciation" .
 
 vf:scope  a           owl:ObjectProperty ;
-        rdfs:comment  "The larger boundary or context, used for accounting, planning, distributing income." ;
-        rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
+        rdfs:comment  "The larger boundary or context, used for documenting, accounting, planning, distributing income." ;
+        rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment vf:AgentRelationship ) ] ;
         rdfs:label    "scope" ;
         rdfs:range    owl:Thing .
 
