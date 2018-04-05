@@ -326,16 +326,16 @@ vf:involves  a        owl:ObjectProperty ;
         rdfs:label    "involves" ;
         rdfs:range    vf:EconomicResource .
 
+vf:inputOf  a        owl:ObjectProperty ;
+        rdfs:domain  [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
+        rdfs:label   "input of" ;
+        rdfs:range   vf:Process .
+
 vf:currentQuantity  a  owl:ObjectProperty ;
         rdfs:comment  "The current amount and unit of the economic resource." ;
         rdfs:domain   vf:EconomicResource ;
         rdfs:label    "current quantity" ;
         rdfs:range    qudt:QuantityValue .
-
-vf:inputOf  a        owl:ObjectProperty ;
-        rdfs:domain  [ owl:unionOf  ( vf:EconomicEvent vf:Commitment ) ] ;
-        rdfs:label   "input of" ;
-        rdfs:range   vf:Process .
 
 vf:Appreciation  a    owl:Class ;
         rdfs:comment  "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy." ;
@@ -346,6 +346,10 @@ vf:scope  a           owl:ObjectProperty ;
         rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment vf:AgentRelationship ) ] ;
         rdfs:label    "scope" ;
         rdfs:range    owl:Thing .
+
+vf:issue  a                 vf:Action ;
+        rdfs:label          "issue" ;
+        rdfs:subPropertyOf  vf:decrement .
 
 vf:outputs  a        owl:ObjectProperty ;
         rdfs:domain  vf:Process ;
@@ -361,10 +365,6 @@ vf:under  a           owl:ObjectProperty ;
         rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment vf:Reciprocity vf:Fulfillment ) ] ;
         rdfs:label    "under" ;
         rdfs:range    vf:Agreement .
-
-vf:issue  a                 vf:Action ;
-        rdfs:label          "issue" ;
-        rdfs:subPropertyOf  vf:decrement .
 
 vf:duration  a        owl:ObjectProperty ;
         rdfs:comment  "The observed duration of the economic event." ;

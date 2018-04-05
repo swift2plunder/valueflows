@@ -5,19 +5,9 @@
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b16",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
-    }
-  }, {
     "@id" : "_:b18",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:Reciprocity", "vf:Fulfillment" ]
-    }
-  }, {
-    "@id" : "_:b19",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:AgentRelationship" ]
     }
   }, {
     "@id" : "_:b2",
@@ -25,12 +15,17 @@
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b25",
+    "@id" : "_:b20",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b6",
+    "@id" : "_:b21",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b22",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
@@ -38,6 +33,11 @@
     "@id" : "_:b7",
     "unionOf" : {
       "@list" : [ "vf:Commitment", "vf:EconomicResource" ]
+    }
+  }, {
+    "@id" : "_:b8",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:AgentRelationship" ]
     }
   }, {
     "@id" : "org:Organization",
@@ -152,7 +152,7 @@
     "@id" : "vf:action",
     "@type" : "owl:ObjectProperty",
     "comment" : "Relates a process input or output to a verb, such as consume, produce, work, improve, etc.",
-    "domain" : "_:b25",
+    "domain" : "_:b21",
     "label" : "action",
     "range" : "vf:Action"
   }, {
@@ -292,7 +292,7 @@
   }, {
     "@id" : "vf:inputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b16",
+    "domain" : "_:b22",
     "label" : "input of",
     "range" : "vf:Process"
   }, {
@@ -339,7 +339,7 @@
   }, {
     "@id" : "vf:outputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b6",
+    "domain" : "_:b2",
     "label" : "output of",
     "range" : "vf:Process"
   }, {
@@ -383,7 +383,7 @@
     "@id" : "vf:provider",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent from whom the intended, committed, or actual economic event is initiated.",
-    "domain" : "_:b2",
+    "domain" : "_:b14",
     "label" : "provider",
     "range" : "foaf:Agent"
   }, {
@@ -395,7 +395,7 @@
     "@id" : "vf:receiver",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent whom the intended, committed, or actual economic event is for.",
-    "domain" : "_:b14",
+    "domain" : "_:b20",
     "label" : "receiver",
     "range" : "foaf:Agent"
   }, {
@@ -416,7 +416,7 @@
     "@id" : "vf:scope",
     "@type" : "owl:ObjectProperty",
     "comment" : "The larger boundary or context, used for documenting, accounting, planning, distributing income.",
-    "domain" : "_:b19",
+    "domain" : "_:b8",
     "label" : "scope",
     "range" : "owl:Thing"
   }, {
@@ -488,10 +488,6 @@
       "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
       "@type" : "@id"
     },
-    "unionOf" : {
-      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
-      "@type" : "@id"
-    },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
@@ -520,6 +516,10 @@
     },
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
       "@type" : "@id"
     },
     "vf" : "https://w3id.org/valueflows#",
