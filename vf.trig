@@ -347,10 +347,6 @@ vf:scope  a           owl:ObjectProperty ;
         rdfs:label    "scope" ;
         rdfs:range    owl:Thing .
 
-vf:issue  a                 vf:Action ;
-        rdfs:label          "issue" ;
-        rdfs:subPropertyOf  vf:decrement .
-
 vf:outputs  a        owl:ObjectProperty ;
         rdfs:domain  vf:Process ;
         rdfs:label   "outputs" ;
@@ -365,6 +361,10 @@ vf:under  a           owl:ObjectProperty ;
         rdfs:domain   [ owl:unionOf  ( vf:EconomicEvent vf:Commitment vf:Reciprocity vf:Fulfillment ) ] ;
         rdfs:label    "under" ;
         rdfs:range    vf:Agreement .
+
+vf:issue  a                 vf:Action ;
+        rdfs:label          "issue" ;
+        rdfs:subPropertyOf  vf:decrement .
 
 vf:duration  a        owl:ObjectProperty ;
         rdfs:comment  "The observed duration of the economic event." ;

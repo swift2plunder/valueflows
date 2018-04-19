@@ -11,12 +11,37 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff8</id>
+      <id>718a1966:162de5096ee:-7ff6</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ff7</id>
+      <id>718a1966:162de5096ee:-7ff5</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff8</id>
+      <id>718a1966:162de5096ee:-7ff6</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fef</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7fee</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fef</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
+      <id>1fa5285c5b9a79db1eca37e20adc2f24</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ff6</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff0</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7fef</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff0</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
       <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
@@ -28,7 +53,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#outputOf</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>ea390bdcafa48d57607b4c6b38fa0cf7</id>
+      <id>8467deb324e26bb0a886781cba62f1d4</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#outputOf</uri>
@@ -41,14 +66,9 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff2</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ff1</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff2</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+      <id>b3caf249cfc8369bc83fa0cd5494ee18</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ffc</id>
     </triple>
     <triple>
       <uri>http://xmlns.com/foaf/0.1/#Agent</uri>
@@ -66,14 +86,19 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7feb</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7fea</id>
+      <id>8467deb324e26bb0a886781cba62f1d4</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ff8</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7feb</id>
+      <id>718a1966:162de5096ee:-7ffc</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7ffb</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ffc</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Reciprocity</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#subject</uri>
@@ -113,7 +138,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>92d856b702fe4be4e9b7dba98cffadd0</id>
+      <id>1fa5285c5b9a79db1eca37e20adc2f24</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#resourceClassifiedAs</uri>
@@ -216,6 +241,31 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
+      <id>d9085bfcd74d8b20c41c0a97c709509d</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ff2</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff5</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff5</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#EconomicResource</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fee</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fee</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#AgentRelationship</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows/</uri>
       <uri>http://purl.org/dc/terms/status</uri>
       <uri>http://purl.org/adms/status/UnderDevelopment</uri>
@@ -244,16 +294,6 @@
       <uri>https://w3id.org/valueflows#accept</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>https://w3id.org/valueflows#Action</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff7</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff7</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#start</uri>
@@ -301,14 +341,9 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff1</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff1</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
+      <id>694de2d7dc245a013865a6b799c6a913</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ff0</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#work</uri>
@@ -321,14 +356,14 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fea</id>
+      <id>718a1966:162de5096ee:-7ffb</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fea</id>
+      <id>718a1966:162de5096ee:-7ffb</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Fulfillment</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#EconomicEvent</uri>
@@ -461,6 +496,11 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <id>99582e2e40a530946f75ce34cb46c72d</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ffa</id>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#object</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The object of a relationship between 2 agents.</typedLiteral>
@@ -501,6 +541,11 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
+      <id>284062a2455c4f7f0d516f7eca2653b0</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7ff4</id>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#fulfills</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The commitment which is completely or partially fulfilled by an economic event.</typedLiteral>
@@ -526,19 +571,24 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>114aad0c54661f1917fa68c50432ca83</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ff0</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff6</id>
+      <id>718a1966:162de5096ee:-7ff4</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ff5</id>
+      <id>718a1966:162de5096ee:-7ff3</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff6</id>
+      <id>718a1966:162de5096ee:-7ff4</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fed</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7fec</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fed</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#Action</uri>
@@ -559,16 +609,6 @@
       <uri>https://w3id.org/valueflows#Action</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7fef</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7fee</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7fef</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#EconomicResource</uri>
@@ -641,27 +681,12 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff0</id>
+      <id>718a1966:162de5096ee:-7ffa</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7fef</id>
+      <id>718a1966:162de5096ee:-7ff9</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff0</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
-    </triple>
-    <triple>
-      <id>2f76d9cb8e2baf2a68bf61bbfddc568b</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ff4</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffc</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ffb</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffc</id>
+      <id>718a1966:162de5096ee:-7ffa</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
       <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
@@ -706,9 +731,14 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>713709d3783ca756f427b8a232eca9b2</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7fed</id>
+      <id>718a1966:162de5096ee:-7ff9</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff9</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#affects</uri>
@@ -808,7 +838,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#provider</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>2f76d9cb8e2baf2a68bf61bbfddc568b</id>
+      <id>284062a2455c4f7f0d516f7eca2653b0</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#provider</uri>
@@ -824,6 +854,16 @@
       <uri>https://w3id.org/valueflows#use</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>https://w3id.org/valueflows#Action</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff3</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff3</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#trackingIdentifier</uri>
@@ -846,9 +886,14 @@
       <uri>http://www.w3.org/2002/07/owl#AnnotationProperty</uri>
     </triple>
     <triple>
-      <id>ea390bdcafa48d57607b4c6b38fa0cf7</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ff8</id>
+      <id>718a1966:162de5096ee:-7fec</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7feb</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fec</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#Agreement</uri>
@@ -864,26 +909,6 @@
       <uri>https://w3id.org/valueflows#Agreement</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff5</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff5</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#EconomicResource</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7fee</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7fee</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#AgentRelationship</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#ResourceClassification</uri>
@@ -926,16 +951,6 @@
       <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
-      <id>92d856b702fe4be4e9b7dba98cffadd0</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ff6</id>
-    </triple>
-    <triple>
-      <id>5e6c1368206c933939faaa1472e2ec1b</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ff2</id>
-    </triple>
-    <triple>
       <uri>https://w3id.org/valueflows#exchangeClassifiedAs</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The primary classification that describes an exchange agreement, at any level of granularity.</typedLiteral>
@@ -974,16 +989,6 @@
       <uri>https://w3id.org/valueflows#Process</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffb</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffb</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#fulfilledBy</uri>
@@ -1056,6 +1061,16 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <id>718a1966:162de5096ee:-7ff8</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <id>718a1966:162de5096ee:-7ff7</id>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff8</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#createdBy</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">References the economic event that fully or partially created the commitment, often based on a prior agreement.</typedLiteral>
@@ -1103,7 +1118,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#action</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>3868f6eb8f83a9804f1013e10ac1e737</id>
+      <id>b3caf249cfc8369bc83fa0cd5494ee18</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#action</uri>
@@ -1161,11 +1176,6 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>8c3ea94193b422b27cb6815009dee379</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ffa</id>
-    </triple>
-    <triple>
       <uri>https://w3id.org/valueflows#Fulfillment</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">The quantity that the vf:EconomicEvent fulfilled towards the vf:Commitment.</typedLiteral>
@@ -1181,24 +1191,24 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff4</id>
+      <id>718a1966:162de5096ee:-7ff2</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ff3</id>
+      <id>718a1966:162de5096ee:-7ff1</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff4</id>
+      <id>718a1966:162de5096ee:-7ff2</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
       <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fed</id>
+      <id>718a1966:162de5096ee:-7feb</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7fec</id>
+      <id>718a1966:162de5096ee:-7fea</id>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fed</id>
+      <id>718a1966:162de5096ee:-7feb</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
+      <uri>https://w3id.org/valueflows#Reciprocity</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#committedInputs</uri>
@@ -1303,17 +1313,12 @@
     <triple>
       <uri>https://w3id.org/valueflows#receiver</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>5e6c1368206c933939faaa1472e2ec1b</id>
+      <id>d9085bfcd74d8b20c41c0a97c709509d</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#receiver</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
-    </triple>
-    <triple>
-      <id>3868f6eb8f83a9804f1013e10ac1e737</id>
-      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
-      <id>-2da3939f:162973c168c:-7ffc</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#relationship</uri>
@@ -1339,16 +1344,6 @@
       <uri>https://w3id.org/valueflows#relationship</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffa</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7ff9</id>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ffa</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#EconomicEvent</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#name</uri>
@@ -1381,6 +1376,16 @@
       <uri>http://www.w3.org/2002/07/owl#Class</uri>
     </triple>
     <triple>
+      <id>718a1966:162de5096ee:-7ff7</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7ff7</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
       <uri>https://w3id.org/valueflows#involves</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#comment</uri>
       <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">EconomicResource the Commitment intends or commits to affect. Could be an actual resource or a category or type of resource.</typedLiteral>
@@ -1406,16 +1411,6 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff9</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff9</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
-    </triple>
-    <triple>
       <uri>https://w3id.org/valueflows#inputOf</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#range</uri>
       <uri>https://w3id.org/valueflows#Process</uri>
@@ -1423,7 +1418,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#inputOf</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>8c3ea94193b422b27cb6815009dee379</id>
+      <id>99582e2e40a530946f75ce34cb46c72d</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#inputOf</uri>
@@ -1493,7 +1488,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#scope</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>114aad0c54661f1917fa68c50432ca83</id>
+      <id>694de2d7dc245a013865a6b799c6a913</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#scope</uri>
@@ -1501,29 +1496,24 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <uri>https://w3id.org/valueflows#issue</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#subPropertyOf</uri>
-      <uri>https://w3id.org/valueflows#decrement</uri>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#issue</uri>
-      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
-      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">issue</typedLiteral>
-    </triple>
-    <triple>
-      <uri>https://w3id.org/valueflows#issue</uri>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
-      <uri>https://w3id.org/valueflows#Action</uri>
-    </triple>
-    <triple>
-      <id>-2da3939f:162973c168c:-7ff3</id>
+      <id>718a1966:162de5096ee:-7ff1</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7ff3</id>
+      <id>718a1966:162de5096ee:-7ff1</id>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
       <uri>https://w3id.org/valueflows#Commitment</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fea</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#nil</uri>
+    </triple>
+    <triple>
+      <id>718a1966:162de5096ee:-7fea</id>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
+      <uri>https://w3id.org/valueflows#Fulfillment</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#outputs</uri>
@@ -1578,7 +1568,7 @@
     <triple>
       <uri>https://w3id.org/valueflows#under</uri>
       <uri>http://www.w3.org/2000/01/rdf-schema#domain</uri>
-      <id>713709d3783ca756f427b8a232eca9b2</id>
+      <id>082d0b5cdd5d094eeb4272ac95cdab6a</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#under</uri>
@@ -1586,14 +1576,19 @@
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fec</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#rest</uri>
-      <id>-2da3939f:162973c168c:-7feb</id>
+      <uri>https://w3id.org/valueflows#issue</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#subPropertyOf</uri>
+      <uri>https://w3id.org/valueflows#decrement</uri>
     </triple>
     <triple>
-      <id>-2da3939f:162973c168c:-7fec</id>
-      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#first</uri>
-      <uri>https://w3id.org/valueflows#Commitment</uri>
+      <uri>https://w3id.org/valueflows#issue</uri>
+      <uri>http://www.w3.org/2000/01/rdf-schema#label</uri>
+      <typedLiteral datatype="http://www.w3.org/2001/XMLSchema#string">issue</typedLiteral>
+    </triple>
+    <triple>
+      <uri>https://w3id.org/valueflows#issue</uri>
+      <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
+      <uri>https://w3id.org/valueflows#Action</uri>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#duration</uri>
@@ -1614,6 +1609,11 @@
       <uri>https://w3id.org/valueflows#duration</uri>
       <uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri>
       <uri>http://www.w3.org/2002/07/owl#ObjectProperty</uri>
+    </triple>
+    <triple>
+      <id>082d0b5cdd5d094eeb4272ac95cdab6a</id>
+      <uri>http://www.w3.org/2002/07/owl#unionOf</uri>
+      <id>718a1966:162de5096ee:-7fed</id>
     </triple>
     <triple>
       <uri>https://w3id.org/valueflows#primaryLocation</uri>

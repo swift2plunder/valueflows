@@ -1,43 +1,43 @@
 {
   "@graph" : [ {
+    "@id" : "_:b11",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b13",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:AgentRelationship" ]
+    }
+  }, {
     "@id" : "_:b14",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
-    "@id" : "_:b18",
+    "@id" : "_:b16",
+    "unionOf" : {
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+    }
+  }, {
+    "@id" : "_:b26",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:Reciprocity", "vf:Fulfillment" ]
     }
   }, {
-    "@id" : "_:b2",
+    "@id" : "_:b4",
     "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
+      "@list" : [ "vf:Commitment", "vf:EconomicResource" ]
     }
   }, {
-    "@id" : "_:b20",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
-    }
-  }, {
-    "@id" : "_:b21",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
-    }
-  }, {
-    "@id" : "_:b22",
+    "@id" : "_:b6",
     "unionOf" : {
       "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
     "@id" : "_:b7",
     "unionOf" : {
-      "@list" : [ "vf:Commitment", "vf:EconomicResource" ]
-    }
-  }, {
-    "@id" : "_:b8",
-    "unionOf" : {
-      "@list" : [ "vf:EconomicEvent", "vf:Commitment", "vf:AgentRelationship" ]
+      "@list" : [ "vf:EconomicEvent", "vf:Commitment" ]
     }
   }, {
     "@id" : "org:Organization",
@@ -152,7 +152,7 @@
     "@id" : "vf:action",
     "@type" : "owl:ObjectProperty",
     "comment" : "Relates a process input or output to a verb, such as consume, produce, work, improve, etc.",
-    "domain" : "_:b21",
+    "domain" : "_:b7",
     "label" : "action",
     "range" : "vf:Action"
   }, {
@@ -292,7 +292,7 @@
   }, {
     "@id" : "vf:inputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b22",
+    "domain" : "_:b14",
     "label" : "input of",
     "range" : "vf:Process"
   }, {
@@ -339,7 +339,7 @@
   }, {
     "@id" : "vf:outputOf",
     "@type" : "owl:ObjectProperty",
-    "domain" : "_:b2",
+    "domain" : "_:b6",
     "label" : "output of",
     "range" : "vf:Process"
   }, {
@@ -383,7 +383,7 @@
     "@id" : "vf:provider",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent from whom the intended, committed, or actual economic event is initiated.",
-    "domain" : "_:b14",
+    "domain" : "_:b16",
     "label" : "provider",
     "range" : "foaf:Agent"
   }, {
@@ -395,7 +395,7 @@
     "@id" : "vf:receiver",
     "@type" : "owl:ObjectProperty",
     "comment" : "The economic agent whom the intended, committed, or actual economic event is for.",
-    "domain" : "_:b20",
+    "domain" : "_:b11",
     "label" : "receiver",
     "range" : "foaf:Agent"
   }, {
@@ -409,14 +409,14 @@
     "@id" : "vf:resourceClassifiedAs",
     "@type" : "owl:ObjectProperty",
     "comment" : "A resource's primary classification, as part of describing that resource.",
-    "domain" : "_:b7",
+    "domain" : "_:b4",
     "label" : "resource classified as",
     "range" : "vf:ResourceClassification"
   }, {
     "@id" : "vf:scope",
     "@type" : "owl:ObjectProperty",
     "comment" : "The larger boundary or context, used for documenting, accounting, planning, distributing income.",
-    "domain" : "_:b8",
+    "domain" : "_:b13",
     "label" : "scope",
     "range" : "owl:Thing"
   }, {
@@ -442,7 +442,7 @@
     "@id" : "vf:under",
     "@type" : "owl:ObjectProperty",
     "comment" : "Reference an agreement between agents which specifies the rules or policies which govern this event.",
-    "domain" : "_:b18",
+    "domain" : "_:b26",
     "label" : "under",
     "range" : "vf:Agreement"
   }, {
@@ -488,6 +488,10 @@
       "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
       "@type" : "@id"
     },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
     "range" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
       "@type" : "@id"
@@ -516,10 +520,6 @@
     },
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
-    "unionOf" : {
-      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
       "@type" : "@id"
     },
     "vf" : "https://w3id.org/valueflows#",
