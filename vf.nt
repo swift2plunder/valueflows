@@ -179,7 +179,7 @@ _:b9 <http://www.w3.org/2002/07/owl#unionOf> _:b10 .
 <https://w3id.org/valueflows#action> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Action> .
 <https://w3id.org/valueflows#action> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event." .
+<https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount and unit of the event. This is the quantity that could be used to increment or decrement a resource, depending on the type of resource and type of event." .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "affected quantity" .
 <https://w3id.org/valueflows#affectedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
@@ -217,6 +217,12 @@ _:b9 <http://www.w3.org/2002/07/owl#unionOf> _:b10 .
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as" .
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount and unit of the commitment." .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "committed quantity" .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
+<https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#committedTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#committedTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The promised temporal instant or interval." .
 <https://w3id.org/valueflows#committedTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
@@ -314,6 +320,12 @@ _:b9 <http://www.w3.org/2002/07/owl#unionOf> _:b10 .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2000/01/rdf-schema#label> "input of" .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2000/01/rdf-schema#range> _:b9 .
 <https://w3id.org/valueflows#inputOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount and unit of the intent." .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Intent> .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "intended quantity" .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
+<https://w3id.org/valueflows#intendedQuantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#intendedTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#intendedTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended temporal instant or interval." .
 <https://w3id.org/valueflows#intendedTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Intent> .
