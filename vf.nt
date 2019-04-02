@@ -257,12 +257,6 @@ _:b9 <http://www.w3.org/2002/07/owl#unionOf> _:b10 .
 <https://w3id.org/valueflows#definedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "defined quantity" .
 <https://w3id.org/valueflows#definedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
 <https://w3id.org/valueflows#definedQuantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/2000/01/rdf-schema#comment> "The calendar duration defined for this type of process." .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#RecipeProcess> .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/2000/01/rdf-schema#label> "duration" .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalDuration> .
-<https://w3id.org/valueflows#duration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#durationMultiplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/valueflows#durationMultiplier> <http://www.w3.org/2000/01/rdf-schema#comment> "The multiplier for duration based on capacities for the recipe." .
 <https://w3id.org/valueflows#durationMultiplier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#RecipeProcess> .
