@@ -140,7 +140,7 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Appreciation" .
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Claim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#Claim> <http://www.w3.org/2000/01/rdf-schema#comment> "." .
+<https://w3id.org/valueflows#Claim> <http://www.w3.org/2000/01/rdf-schema#comment> "A claim for a future economic event(s) in reciprocity for an economic event that already occurred." .
 <https://w3id.org/valueflows#Claim> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Claim" .
 <https://w3id.org/valueflows#Claim> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Commitment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -194,7 +194,7 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#Satisfaction> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Satisfaction" .
 <https://w3id.org/valueflows#Satisfaction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Settlement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#Settlement> <http://www.w3.org/2000/01/rdf-schema#comment> "." .
+<https://w3id.org/valueflows#Settlement> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity that the economic event settled of the claim." .
 <https://w3id.org/valueflows#Settlement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Settlement" .
 <https://w3id.org/valueflows#Settlement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -473,6 +473,12 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#settledBy> <http://www.w3.org/2000/01/rdf-schema#label> "settled by" .
 <https://w3id.org/valueflows#settledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#EconomicEvent> .
 <https://w3id.org/valueflows#settledBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity of the settlement of an economic event towards a claim." .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Settlement> .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "settled quantity" .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://qudt.org/schema/qudt/QuantityValue> .
+<https://w3id.org/valueflows#settledQuantity> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#settles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#settles> <http://www.w3.org/2000/01/rdf-schema#comment> "References a claim that fully or partially settled by the economic event." .
 <https://w3id.org/valueflows#settles> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Settlement> .
