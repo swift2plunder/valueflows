@@ -132,7 +132,7 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/valueflows#AgentRelationshipRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of agreement among economic agents, that can be referenced in VF to clarify the economic activity.  This is a placeholder pending investigating other vocabularies." .
+<https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of agreement among economic agents." .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Agreement" .
 <https://w3id.org/valueflows#Agreement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Appreciation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -147,11 +147,6 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#Commitment> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned economic flow that has been promised by an agent to another agent." .
 <https://w3id.org/valueflows#Commitment> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Commitment" .
 <https://w3id.org/valueflows#Commitment> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-<https://w3id.org/valueflows#DistributionAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#DistributionAgreement> <http://www.w3.org/2000/01/rdf-schema#comment> "An agreement to distribute some resource in exchange for inputs or outputs created by other agents." .
-<https://w3id.org/valueflows#DistributionAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:DistributionAgreement" .
-<https://w3id.org/valueflows#DistributionAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valueflows#Agreement> .
-<https://w3id.org/valueflows#DistributionAgreement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#EconomicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#EconomicEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An observed economic flow, as opposed to a flow planned to happen in the future. This could reflect a change in the quantity of an economic resource. It is also defined by its behavior in relation to the economic resource (see vf:action)" .
 <https://w3id.org/valueflows#EconomicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "vf:EconomicEvent" .
@@ -160,11 +155,6 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource which is useful to people or the ecosystem." .
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/2000/01/rdf-schema#label> "vf:EconomicResource" .
 <https://w3id.org/valueflows#EconomicResource> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-<https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2000/01/rdf-schema#comment> "An agreement to exchange something with another agent(s), containing commitments towards that end." .
-<https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "vf:ExchangeAgreement" .
-<https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/valueflows#Agreement> .
-<https://w3id.org/valueflows#ExchangeAgreement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantity that the economic event fulfilled towards the commitment." .
 <https://w3id.org/valueflows#Fulfillment> <http://www.w3.org/2000/01/rdf-schema#label> "vf:Fulfillment" .
@@ -249,6 +239,12 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2000/01/rdf-schema#label> "classified as" .
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/valueflows#classifiedAs> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This commitment is part of the agreement, which could not exist without it." .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/2000/01/rdf-schema#label> "clause of" .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Agreement> .
+<https://w3id.org/valueflows#clauseOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount and unit of the commitment." .
 <https://w3id.org/valueflows#committedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Commitment> .
@@ -403,6 +399,12 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#raise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
 <https://w3id.org/valueflows#raise> <http://www.w3.org/2000/01/rdf-schema#label> "raise" .
 <https://w3id.org/valueflows#raise> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#increment> .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This economic event occurs as part of this agreement." .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicEvent> .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "realization of" .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Agreement> .
+<https://w3id.org/valueflows#realizationOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#receive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/valueflows#Action> .
 <https://w3id.org/valueflows#receive> <http://www.w3.org/2000/01/rdf-schema#label> "receive" .
 <https://w3id.org/valueflows#receive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#increment> .
