@@ -271,12 +271,12 @@ _:b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/0
 <https://w3id.org/valueflows#consume> <http://www.w3.org/2000/01/rdf-schema#label> "consume" .
 <https://w3id.org/valueflows#consume> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/valueflows#decrement> .
 <https://w3id.org/valueflows#consume> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Used when a stock economic resource contains units also defined as economic resources." .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains" .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#EconomicResource> .
-<https://w3id.org/valueflows#contains> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Used when a stock economic resource contains units also defined as economic resources." .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/2000/01/rdf-schema#label> "contained in" .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#EconomicResource> .
+<https://w3id.org/valueflows#containedIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#currentLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#currentLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The current place an economic resource is located.  Could be at any level of granularity, from a town to an address to a warehouse location.  Usually mappable." .
 <https://w3id.org/valueflows#currentLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
