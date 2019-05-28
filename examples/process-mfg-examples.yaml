@@ -1,133 +1,180 @@
 # Example: Simple manufacturing process
+# ActivityPub extension demo by Chris Babcock
 
+
+# Add the ActivityStreams @context and make it the default namespace
+# Rename the previous default namespace
 '@context':
-  - https://git.io/vf-examples-jsonld-context
+  - https://www.w3.org/ns/activitystreams  
+  - vf: https://git.io/vf-examples-jsonld-context
   - alice: https://alice.example/
     mfg: https://manufacturing.example/
     make: https://makezine.com/
 
-'@id': rgh:valueflows/valueflows/master/examples/process-mfg-examples.yaml
-'@graph':
+# The id can be any IRI. Let's assume a shadow SSB net
+'id': 'ssb:%xjJLA+1337/VfHaxXorzRoo1XMP13/m6ZDHEfWCmYPA=.sha256'
+'name':'VF/AP Desk'
+'summary': 'ValueFlows over ActivityPub making a Desk"
+'type': 
+  - Create
+  - vf:Produce
 
-  # Economic resources before
+# Actor will become "attributedTo" on the Created Object
+# This is the vf:agent, probably an HTTPS IRI
+'actor': 'https://example.org/@shop'
 
-  - '@id': mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf
-    '@type': EconomicResource
-    resourceConformsTo: https://www.opendesk.cc/lean/desk # desk
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 8
+# https://www.w3.org/TR/activitystreams-vocabulary/#audienceTargeting
+'audience': ''
+'context': ''
+'to': ''
+'bcc': ''
+'inReplyTo': 'http://example.client.org/purchasing/orders/#1234567890'
 
-  - '@id': mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q219803 # plywood
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 130
-    note: 4 x 8 sheet of 1/2 inch plywood
+# The user-agent that created the document
+'generator': 'www.vim.org'
 
-  - '@id': mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q2101564 # desk design specification
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 1
+# You can specify an IRI for an external service where the Object is Created
+'instrument': ''
 
-  - '@id': mfg:52f0e212-3c4f-4d27-b345-5e964c135824
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q13231055 # CNC machine
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 1
+# Provide geographical information,
+'location': ''
 
-  # Production
+# These atributes are used when moving 'object' from 'origin' to 'target'
+# The origin and target are collections that might represent inventory
+# The object is the current Activity
+# The tag can be used to make the object more findable
+'origin': ''
+'target': ''
+'object': ''
+'tag': ''
 
-  - '@id': mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    '@type': Process
-    name: Make the lean desk
 
-  - '@id': mfg:b52a5815-fae9-43bf-be95-833b95dc0adb
-    '@type': EconomicEvent
-    inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: consume
-    provider: https://manufacturing.example/
-    receiver: https://manufacturing.example/
-    affects: mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9 # plywood sheets
-    affectedQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 3
+# Below is the original description of the I/Os
+# There's different levels of embedding that could be done
+# I'll choose an appropriate and readable one later...
 
-  - '@id': mfg:b90b0b77-09a2-42e2-8bd4-e9ae2c1c6172
-    '@type': EconomicEvent
-    inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: use
-    provider: https://manufacturing.example/
-    receiver: https://manufacturing.example/
-    affects: mfg:52f0e212-3c4f-4d27-b345-5e964c135824 # CNC machine
-    affectedQuantity:
-      qudt:unit: unit:Hour
-      qudt:numericValue: 3.5
-
-  - '@id': mfg:a8236bbb-81e0-422d-9861-56d2417db0fb
-    '@type': EconomicEvent
-    inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: cite
-    provider: https://makezine.com/
-    receiver: https://manufacturing.example/
-    affects: mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33 # desk design specification
-    affectedQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 1
-
-  - '@id': mfg:6f438393-7f87-4914-806c-e23a4fd15e89
-    '@type': EconomicEvent
-    inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: work
-    provider: https://alice.example/
-    receiver: https://manufacturing.example/
-    resourceClassifiedAs: https://www.wikidata.org/wiki/Q192047 # machining
-    affectedQuantity:
-      qudt:unit: unit:Hour
-      qudt:numericValue: 7
-
-  - '@id': mfg:d4d2fd71-34f2-41c3-b1c5-19ad5ed2da59
-    '@type': EconomicEvent
-    inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: produce
-    provider: https://manufacturing.example/
-    receiver: https://manufacturing.example/
-    affects: mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf # desk
-    affectedQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 1
-
-  # Economic resources after
-
-    - '@id': mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf
-    '@type': EconomicResource
-    resourceConformsTo: https://www.opendesk.cc/lean/desk # desk
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 9
-
-  - '@id': mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q219803 # plywood
-    currentQuantity:
-      qudt:unit: unit:Number
-      qudt:numericValue: 127
-    note: 4 x 8 sheet of 1/2 inch plywood
-
-  - '@id': mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q2101564 # desk design specification
-    currentQuantity:
-      qudt:unit: unit:Unitless
-      qudt:numericValue: 1
-
-  - '@id': mfg:52f0e212-3c4f-4d27-b345-5e964c135824
-    '@type': EconomicResource
-    classifiedAs: https://www.wikidata.org/wiki/Q13231055 # CNC machine
-    currentQuantity:
-      qudt:unit: unit:Unitless
-      qudt:numericValue: 1
+    '@id': rgh:valueflows/valueflows/master/examples/process-mfg-examples.yaml
+    '@graph':
+    
+      # Economic resources before
+    
+      - '@id': mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf
+        '@type': EconomicResource
+        vf:resourceConformsTo: https://www.opendesk.cc/lean/desk # desk
+        vf:currentQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 8
+    
+      - '@id': mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q219803 # plywood
+        vf:currentQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 130
+        vf:note: 4 x 8 sheet of 1/2 inch plywood
+    
+      - '@id': mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q2101564 # desk design specification
+        vf:currentQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 1
+    
+      - '@id': mfg:52f0e212-3c4f-4d27-b345-5e964c135824
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q13231055 # CNC machine
+        vf:currentQuantity:
+          vf:qudt:unit: unit:Number
+          vf:qudt:numericValue: 1
+    
+      # Production
+    
+      - '@id': mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        '@type': Process
+        vf:name: Make the lean desk
+    
+      - '@id': mfg:b52a5815-fae9-43bf-be95-833b95dc0adb
+        '@type': EconomicEvent
+        vf:inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        vf:action: consume
+        vf:provider: https://manufacturing.example/
+        vf:receiver: https://manufacturing.example/
+        vf:affects: mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9 # plywood sheets
+        vf:affectedQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 3
+    
+      - '@id': mfg:b90b0b77-09a2-42e2-8bd4-e9ae2c1c6172
+        '@type': EconomicEvent
+        vf:inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        vf:action: use
+        vf:provider: https://manufacturing.example/
+        vf:receiver: https://manufacturing.example/
+        vf:affects: mfg:52f0e212-3c4f-4d27-b345-5e964c135824 # CNC machine
+        vf:affectedQuantity:
+          qudt:unit: unit:Hour
+          qudt:numericValue: 3.5
+    
+      - '@id': mfg:a8236bbb-81e0-422d-9861-56d2417db0fb
+        '@type': EconomicEvent
+        vf:inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        vf:action: cite
+        vf:provider: https://makezine.com/
+        vf:receiver: https://manufacturing.example/
+        vf:affects: mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33 # desk design specification
+        vf:affectedQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 1
+    
+      - '@id': mfg:6f438393-7f87-4914-806c-e23a4fd15e89
+        '@type': EconomicEvent
+        vf:inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        vf:action: work
+        vf:provider: https://alice.example/
+        vf:receiver: https://manufacturing.example/
+        vf:resourceClassifiedAs: https://www.wikidata.org/wiki/Q192047 # machining
+        vf:affectedQuantity:
+          qudt:unit: unit:Hour
+          qudt:numericValue: 7
+    
+      - '@id': mfg:d4d2fd71-34f2-41c3-b1c5-19ad5ed2da59
+        '@type': EconomicEvent
+        vf:inputOf: mfg:02b39a30-3e04-4305-9656-7f261aa63c84
+        vf:action: produce
+        provider: https://manufacturing.example/
+        vf:receiver: https://manufacturing.example/
+        vf:affects: mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf # desk
+        vf:affectedQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 1
+    
+      # Economic resources after
+    
+        - '@id': mfg:e1721a61-cd47-4556-84b9-8b1b81da15bf
+        '@type': EconomicResource
+        vf:resourceConformsTo: https://www.opendesk.cc/lean/desk # desk
+        vf:currentQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 9
+    
+      - '@id': mfg:3129ca8b-fcda-45be-bbda-294dc924d3b9
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q219803 # plywood
+        vf:currentQuantity:
+          qudt:unit: unit:Number
+          qudt:numericValue: 127
+        vf:note: 4 x 8 sheet of 1/2 inch plywood
+    
+      - '@id': mfg:6b97b1be-8e07-44ac-82e5-214f1b2aaf33
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q2101564 # desk design specification
+        vf:currentQuantity:
+          qudt:unit: unit:Unitless
+          qudt:numericValue: 1
+    
+      - '@id': mfg:52f0e212-3c4f-4d27-b345-5e964c135824
+        '@type': EconomicResource
+        vf:classifiedAs: https://www.wikidata.org/wiki/Q13231055 # CNC machine
+        vf:currentQuantity:
+          qudt:unit: unit:Unitless
+          qudt:numericValue: 1
